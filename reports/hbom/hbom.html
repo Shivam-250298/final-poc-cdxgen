@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HBOM | Hardware Inventory Report</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #172338;
+}
+header {
+  background: #14243c;
+  color: white;
+  padding: 35px 7%;
+}
+header h1 { margin: 0 0 10px; }
+header p { color: #c3d1e4; }
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 25px;
+}
+.card, section {
+  background: white;
+  border: 1px solid #e1e7f0;
+  border-radius: 12px;
+  padding: 24px;
+}
+.card strong {
+  display: block;
+  font-size: 30px;
+  color: #193e73;
+}
+.card span {
+  color: #637187;
+  font-size: 13px;
+}
+section {
+  margin-bottom: 24px;
+  overflow-x: auto;
+}
+h2 { font-size: 20px; margin-top: 0; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #e7ecf3;
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+th { background: #edf2f9; }
+tr:hover td { background: #f8faff; }
+.note {
+  background: #f0f5fc;
+  padding: 15px;
+  border-left: 4px solid #3769a5;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Hardware Bill of Materials (HBOM)</h1>
+<p>Amazon EC2 — Virtual Hardware Inventory</p>
+</header>
+<main>
+<div class="cards">
+<div class="card">
+<strong>18</strong>
+<span>Hardware Components</span>
+</div>
+<div class="card">
+<strong>8</strong>
+<span>Hardware Classes</span>
+</div>
+<div class="card">
+<strong>1.6</strong>
+<span>CycloneDX Version</span>
+</div>
+</div>
+
+<section>
+<h2>System Information</h2>
+<p><b>Platform:</b> Amazon EC2</p>
+<p><b>Instance Type:</b> c7i-flex.large</p>
+<p><b>Virtualization:</b> KVM</p>
+<p><b>Inventory Date:</b> 2026-10-22T18:54:51.946058+00:00</p>
+</section>
+
+<section>
+<h2>Hardware Class Summary</h2>
+<table>
+<tr><th>Hardware Class</th><th>Count</th></tr>
+<tr><td>bus</td><td>1</td></tr><tr><td>disk</td><td>3</td></tr><tr><td>display</td><td>1</td></tr><tr><td>memory</td><td>6</td></tr><tr><td>network</td><td>1</td></tr><tr><td>processor</td><td>1</td></tr><tr><td>storage</td><td>1</td></tr><tr><td>volume</td><td>4</td></tr>
+</table>
+</section>
+
+<section>
+<h2>Hardware Component Inventory</h2>
+<table>
+<tr>
+<th>Component</th>
+<th>Class</th>
+<th>Vendor</th>
+<th>Description</th>
+</tr>
+<tr><td>Motherboard</td><td>bus</td><td>Amazon EC2</td><td>Motherboard</td></tr><tr><td>BIOS</td><td>memory</td><td>Amazon EC2</td><td>BIOS</td></tr><tr><td>Intel(R) Xeon(R) Platinum 8488C</td><td>processor</td><td>Intel Corp.</td><td>CPU</td></tr><tr><td>L1 cache</td><td>memory</td><td>—</td><td>L1 cache</td></tr><tr><td>L2 cache</td><td>memory</td><td>—</td><td>L2 cache</td></tr><tr><td>L3 cache</td><td>memory</td><td>—</td><td>L3 cache</td></tr><tr><td>System Memory</td><td>memory</td><td>—</td><td>System Memory</td></tr><tr><td>DIMM Fast-paged RAMBUS Window DRAM 4800 MHz (0.2 ns)</td><td>memory</td><td>—</td><td>DIMM Fast-paged RAMBUS Window DRAM 4800 MHz (0.2 ns)</td></tr><tr><td>Amazon.com, Inc.</td><td>display</td><td>Amazon.com, Inc.</td><td>VGA compatible controller</td></tr><tr><td>Amazon Elastic Block Store</td><td>storage</td><td>Amazon.com, Inc.</td><td>NVMe device</td></tr><tr><td>NVMe disk</td><td>disk</td><td>—</td><td>NVMe disk</td></tr><tr><td>NVMe disk</td><td>disk</td><td>—</td><td>NVMe disk</td></tr><tr><td>NVMe disk</td><td>disk</td><td>—</td><td>NVMe disk</td></tr><tr><td>EXT4 volume</td><td>volume</td><td>Linux</td><td>EXT4 volume</td></tr><tr><td>BIOS Boot partition</td><td>volume</td><td>EFI</td><td>BIOS Boot partition</td></tr><tr><td>Windows FAT volume</td><td>volume</td><td>mkfs.fat</td><td>Windows FAT volume</td></tr><tr><td>EXT4 volume</td><td>volume</td><td>Linux</td><td>EXT4 volume</td></tr><tr><td>Elastic Network Adapter (ENA)</td><td>network</td><td>Amazon.com, Inc.</td><td>Ethernet interface</td></tr>
+</table>
+</section>
+
+<section>
+<h2>Scope and Limitations</h2>
+<div class="note">
+This report represents hardware visible inside an AWS EC2
+virtual machine. It does not represent the complete physical
+AWS host inventory. Scanner-generated bridge entries and
+host-specific identifiers have been excluded.
+This report is an inventory, not a hardware vulnerability assessment.
+</div>
+</section>
+</main>
+</body>
+</html>

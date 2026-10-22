@@ -1,0 +1,387 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:03988008-b0f6-4610-8bcd-f4021b9ea619",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-22T18:54:51.946058+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "lshw inventory converter"
+        }
+      ]
+    },
+    "component": {
+      "type": "platform",
+      "name": "Amazon EC2 virtual machine",
+      "properties": [
+        {
+          "name": "hbom:instanceType",
+          "value": "c7i-flex.large"
+        },
+        {
+          "name": "hbom:virtualization",
+          "value": "Amazon EC2 / KVM"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "device",
+      "bom-ref": "hardware-001",
+      "name": "Motherboard",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "bus"
+        },
+        {
+          "name": "hbom:description",
+          "value": "Motherboard"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "Amazon EC2"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-002",
+      "name": "BIOS",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "memory"
+        },
+        {
+          "name": "hbom:description",
+          "value": "BIOS"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "Amazon EC2"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "65536"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-003",
+      "name": "Intel(R) Xeon(R) Platinum 8488C",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "processor"
+        },
+        {
+          "name": "hbom:description",
+          "value": "CPU"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "Intel Corp."
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "2400000000"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-004",
+      "name": "L1 cache",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "memory"
+        },
+        {
+          "name": "hbom:description",
+          "value": "L1 cache"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "3932160"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-005",
+      "name": "L2 cache",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "memory"
+        },
+        {
+          "name": "hbom:description",
+          "value": "L2 cache"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "100663296"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-006",
+      "name": "L3 cache",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "memory"
+        },
+        {
+          "name": "hbom:description",
+          "value": "L3 cache"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "110100480"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-007",
+      "name": "System Memory",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "memory"
+        },
+        {
+          "name": "hbom:description",
+          "value": "System Memory"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "4294967296"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-008",
+      "name": "DIMM Fast-paged RAMBUS Window DRAM 4800 MHz (0.2 ns)",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "memory"
+        },
+        {
+          "name": "hbom:description",
+          "value": "DIMM Fast-paged RAMBUS Window DRAM 4800 MHz (0.2 ns)"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "4294967296"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-009",
+      "name": "Amazon.com, Inc.",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "display"
+        },
+        {
+          "name": "hbom:description",
+          "value": "VGA compatible controller"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "Amazon.com, Inc."
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-010",
+      "name": "Amazon Elastic Block Store",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "storage"
+        },
+        {
+          "name": "hbom:description",
+          "value": "NVMe device"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "Amazon.com, Inc."
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-011",
+      "name": "NVMe disk",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "disk"
+        },
+        {
+          "name": "hbom:description",
+          "value": "NVMe disk"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-012",
+      "name": "NVMe disk",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "disk"
+        },
+        {
+          "name": "hbom:description",
+          "value": "NVMe disk"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-013",
+      "name": "NVMe disk",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "disk"
+        },
+        {
+          "name": "hbom:description",
+          "value": "NVMe disk"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "32212254720"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-014",
+      "name": "EXT4 volume",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "volume"
+        },
+        {
+          "name": "hbom:description",
+          "value": "EXT4 volume"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "Linux"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "31137443840"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-015",
+      "name": "BIOS Boot partition",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "volume"
+        },
+        {
+          "name": "hbom:description",
+          "value": "BIOS Boot partition"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "EFI"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-016",
+      "name": "Windows FAT volume",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "volume"
+        },
+        {
+          "name": "hbom:description",
+          "value": "Windows FAT volume"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "mkfs.fat"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "105862656"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-017",
+      "name": "EXT4 volume",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "volume"
+        },
+        {
+          "name": "hbom:description",
+          "value": "EXT4 volume"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "Linux"
+        },
+        {
+          "name": "hbom:reportedSize",
+          "value": "957349888"
+        }
+      ]
+    },
+    {
+      "type": "device",
+      "bom-ref": "hardware-018",
+      "name": "Elastic Network Adapter (ENA)",
+      "properties": [
+        {
+          "name": "hbom:hardwareClass",
+          "value": "network"
+        },
+        {
+          "name": "hbom:description",
+          "value": "Ethernet interface"
+        },
+        {
+          "name": "hbom:vendor",
+          "value": "Amazon.com, Inc."
+        }
+      ]
+    }
+  ]
+}
