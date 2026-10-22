@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GO | CBOM Report</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f6fb; color: #172338;
+        font-family: Arial, Helvetica, sans-serif; }
+header { background: #14243c; color: white; padding: 34px 7%; }
+header h1 { margin: 0 0 8px; font-size: 29px; }
+header p { margin: 0; color: #c3d1e4; }
+main { max-width: 1200px; margin: 30px auto; padding: 0 22px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 16px; margin-bottom: 28px; }
+.card { background: white; border: 1px solid #e1e7f0; border-radius: 12px;
+         padding: 23px; }
+.card .value { font-size: 32px; font-weight: 700; color: #193e73; }
+.card .label { margin-top: 8px; color: #637187; font-size: 13px; }
+section { background: white; border: 1px solid #e1e7f0; border-radius: 12px;
+           margin-bottom: 24px; padding: 24px; overflow-x: auto; }
+h2 { font-size: 20px; margin: 0 0 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #edf2f9; color: #344761; text-align: left; }
+th, td { padding: 12px; border-bottom: 1px solid #e7ecf3;
+          overflow-wrap: anywhere; }
+tr:hover td { background: #f8faff; }
+.empty { text-align: center; color: #748095; padding: 28px; }
+.note { background: #f0f5fc; border-left: 4px solid #3769a5;
+         padding: 15px; line-height: 1.6; font-size: 13px; }
+.meta { font-size: 13px; color: #56657a; line-height: 1.9; }
+footer { text-align: center; padding: 20px; color: #748095; font-size: 12px; }
+@media print {
+  body { background: white; }
+  section, .card { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>GO — Cryptographic Bill of Materials</h1>
+    <p>CycloneDX CBOM Analysis Report</p>
+</header>
+<main>
+<div class="cards">
+    <div class="card"><div class="value">82</div>
+        <div class="label">Total Components</div></div>
+    <div class="card"><div class="value">9</div>
+        <div class="label">Cryptographic Assets</div></div>
+    <div class="card"><div class="value">73</div>
+        <div class="label">Other Components</div></div>
+    <div class="card"><div class="value">1.7</div>
+        <div class="label">CycloneDX Version</div></div>
+</div>
+
+<section>
+<h2>Report Information</h2>
+<div class="meta">
+<strong>Project:</strong> GO<br>
+<strong>BOM Format:</strong> CycloneDX<br>
+<strong>Serial Number:</strong> urn:uuid:825eba3f-14c2-420b-9eba-c2804b838225<br>
+<strong>Tool:</strong> cdxgen 13.4.0<br>
+<strong>HTML Generated:</strong> 22 Oct 2026, 18:29 UTC
+</div>
+</section>
+
+<section>
+<h2>Cryptographic Assets (9)</h2>
+<table>
+<thead><tr>
+<th>Algorithm / Asset</th><th>Asset Type</th><th>OID</th>
+<th>Primitive</th><th>Algorithm Family</th>
+</tr></thead>
+<tbody>
+        <tr>
+            <td><strong>aes</strong></td>
+            <td>algorithm</td>
+            <td>2.16.840.1.101.3.4.1</td>
+            <td>block-cipher</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>des</strong></td>
+            <td>algorithm</td>
+            <td>1.3.36.3.1.1</td>
+            <td>block-cipher</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>hmacSHA</strong></td>
+            <td>algorithm</td>
+            <td>1.3.6.1.5.5.8.1.2</td>
+            <td>mac</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>key</strong></td>
+            <td>related-crypto-material</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>md5</strong></td>
+            <td>algorithm</td>
+            <td>1.2.840.113549.2.5</td>
+            <td>hash</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>private-key</strong></td>
+            <td>related-crypto-material</td>
+            <td>—</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>rsa</strong></td>
+            <td>algorithm</td>
+            <td>2.5.8.1.1</td>
+            <td>pke</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>sha-1</strong></td>
+            <td>algorithm</td>
+            <td>2.16.840.1.113719.1.2.8.82</td>
+            <td>hash</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>sha-256</strong></td>
+            <td>algorithm</td>
+            <td>2.16.840.1.101.3.4.2.1</td>
+            <td>hash</td>
+            <td>—</td>
+        </tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>Dependency and Component Inventory (73)</h2>
+<table>
+<thead><tr>
+<th>Component</th><th>Version</th><th>Type</th><th>Group</th>
+</tr></thead>
+<tbody>
+        <tr>
+            <td>github.com/KyleBanks/depth</td>
+            <td>v1.2.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/beorn7/perks</td>
+            <td>v1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/bits-and-blooms/bitset</td>
+            <td>v1.2.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/bytedance/sonic</td>
+            <td>v1.9.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/cespare/xxhash/v2</td>
+            <td>v2.2.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/chenzhuoyu/base64x</td>
+            <td>v0.0.0-20221115062448-fe3a3abad311</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/davecgh/go-spew</td>
+            <td>v1.1.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/dgryski/go-rendezvous</td>
+            <td>v0.0.0-20200823014737-9f7001d12a5f</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/fsnotify/fsnotify</td>
+            <td>v1.6.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/gabriel-vasile/mimetype</td>
+            <td>v1.4.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/gin-contrib/sse</td>
+            <td>v0.1.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/gin-gonic/gin</td>
+            <td>v1.9.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/go-openapi/jsonpointer</td>
+            <td>v0.19.5</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/go-openapi/jsonreference</td>
+            <td>v0.19.6</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/go-openapi/spec</td>
+            <td>v0.20.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/go-openapi/swag</td>
+            <td>v0.19.15</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/go-playground/locales</td>
+            <td>v0.14.1</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/go-playground/universal-translator</td>
+            <td>v0.18.1</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/go-playground/validator/v10</td>
+            <td>v10.14.0</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/goccy/go-json</td>
+            <td>v0.10.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/gocql/gocql</td>
+            <td>v1.5.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/golang/protobuf</td>
+            <td>v1.5.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/golang/snappy</td>
+            <td>v0.0.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/hailocab/go-hostpool</td>
+            <td>v0.0.0-20160125115350-e80d13ce29ed</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/hashicorp/hcl</td>
+            <td>v1.0.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/josharian/intern</td>
+            <td>v1.0.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/json-iterator/go</td>
+            <td>v1.1.12</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/klauspost/cpuid/v2</td>
+            <td>v2.2.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/leodido/go-urn</td>
+            <td>v1.2.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/magiconair/properties</td>
+            <td>v1.8.7</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/mailru/easyjson</td>
+            <td>v0.7.6</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/mattn/go-isatty</td>
+            <td>v0.0.19</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/matttproud/golang_protobuf_extensions</td>
+            <td>v1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/mitchellh/mapstructure</td>
+            <td>v1.5.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/modern-go/concurrent</td>
+            <td>v0.0.0-20180306012644-bacd9c7ef1dd</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/modern-go/reflect2</td>
+            <td>v1.0.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/pelletier/go-toml/v2</td>
+            <td>v2.0.8</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/penglongli/gin-metrics</td>
+            <td>v0.1.10</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/pkg/errors</td>
+            <td>v0.9.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/pmezard/go-difflib</td>
+            <td>v1.0.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/prometheus/client_golang</td>
+            <td>v1.12.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/prometheus/client_model</td>
+            <td>v0.2.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/prometheus/common</td>
+            <td>v0.32.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/prometheus/procfs</td>
+            <td>v0.7.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/PuerkitoBio/purell</td>
+            <td>v1.1.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/PuerkitoBio/urlesc</td>
+            <td>v0.0.0-20170810143723-de5bf2ad4578</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/redis/go-redis/v9</td>
+            <td>v9.0.5</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/scylladb/gocql</td>
+            <td>v1.10.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/sirupsen/logrus</td>
+            <td>v1.9.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/spf13/afero</td>
+            <td>v1.9.5</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/spf13/cast</td>
+            <td>v1.5.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/spf13/jwalterweatherman</td>
+            <td>v1.1.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/spf13/pflag</td>
+            <td>v1.0.5</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/spf13/viper</td>
+            <td>v1.16.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/stretchr/objx</td>
+            <td>v0.5.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/stretchr/testify</td>
+            <td>v1.8.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/subosito/gotenv</td>
+            <td>v1.4.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/swaggo/files</td>
+            <td>v1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/swaggo/gin-swagger</td>
+            <td>v1.6.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/swaggo/swag</td>
+            <td>v1.8.12</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/twitchyliquid64/golang-asm</td>
+            <td>v0.15.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>github.com/ugorji/go/codec</td>
+            <td>v1.2.11</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>golang.org/x/arch</td>
+            <td>v0.3.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>golang.org/x/crypto</td>
+            <td>v0.9.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>golang.org/x/net</td>
+            <td>v0.10.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>golang.org/x/sys</td>
+            <td>v0.8.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>golang.org/x/text</td>
+            <td>v0.9.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>golang.org/x/tools</td>
+            <td>v0.7.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>google.golang.org/protobuf</td>
+            <td>v1.30.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>gopkg.in/inf.v0</td>
+            <td>v0.9.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>gopkg.in/ini.v1</td>
+            <td>v1.67.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>gopkg.in/yaml.v2</td>
+            <td>v2.4.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>gopkg.in/yaml.v3</td>
+            <td>v3.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>Important Limitations</h2>
+<div class="note">
+This report displays only information present in the supplied CycloneDX JSON.
+A missing cryptographic asset does not prove that the application does not use
+cryptography. Detection depends on scanner coverage and successful analysis.
+This report does not perform vulnerability analysis or provide remediation recommendations.
+</div>
+</section>
+</main>
+<footer>Generated from CycloneDX JSON | CBOM Proof of Concept</footer>
+</body>
+</html>

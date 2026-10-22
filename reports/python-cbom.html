@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PYTHON | CBOM Report</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f6fb; color: #172338;
+        font-family: Arial, Helvetica, sans-serif; }
+header { background: #14243c; color: white; padding: 34px 7%; }
+header h1 { margin: 0 0 8px; font-size: 29px; }
+header p { margin: 0; color: #c3d1e4; }
+main { max-width: 1200px; margin: 30px auto; padding: 0 22px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 16px; margin-bottom: 28px; }
+.card { background: white; border: 1px solid #e1e7f0; border-radius: 12px;
+         padding: 23px; }
+.card .value { font-size: 32px; font-weight: 700; color: #193e73; }
+.card .label { margin-top: 8px; color: #637187; font-size: 13px; }
+section { background: white; border: 1px solid #e1e7f0; border-radius: 12px;
+           margin-bottom: 24px; padding: 24px; overflow-x: auto; }
+h2 { font-size: 20px; margin: 0 0 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #edf2f9; color: #344761; text-align: left; }
+th, td { padding: 12px; border-bottom: 1px solid #e7ecf3;
+          overflow-wrap: anywhere; }
+tr:hover td { background: #f8faff; }
+.empty { text-align: center; color: #748095; padding: 28px; }
+.note { background: #f0f5fc; border-left: 4px solid #3769a5;
+         padding: 15px; line-height: 1.6; font-size: 13px; }
+.meta { font-size: 13px; color: #56657a; line-height: 1.9; }
+footer { text-align: center; padding: 20px; color: #748095; font-size: 12px; }
+@media print {
+  body { background: white; }
+  section, .card { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>PYTHON — Cryptographic Bill of Materials</h1>
+    <p>CycloneDX CBOM Analysis Report</p>
+</header>
+<main>
+<div class="cards">
+    <div class="card"><div class="value">79</div>
+        <div class="label">Total Components</div></div>
+    <div class="card"><div class="value">1</div>
+        <div class="label">Cryptographic Assets</div></div>
+    <div class="card"><div class="value">78</div>
+        <div class="label">Other Components</div></div>
+    <div class="card"><div class="value">1.7</div>
+        <div class="label">CycloneDX Version</div></div>
+</div>
+
+<section>
+<h2>Report Information</h2>
+<div class="meta">
+<strong>Project:</strong> PYTHON<br>
+<strong>BOM Format:</strong> CycloneDX<br>
+<strong>Serial Number:</strong> urn:uuid:b1b360fd-5863-4629-b59f-f9be63afc777<br>
+<strong>Tool:</strong> cdxgen 13.4.0<br>
+<strong>HTML Generated:</strong> 22 Oct 2026, 18:29 UTC
+</div>
+</section>
+
+<section>
+<h2>Cryptographic Assets (1)</h2>
+<table>
+<thead><tr>
+<th>Algorithm / Asset</th><th>Asset Type</th><th>OID</th>
+<th>Primitive</th><th>Algorithm Family</th>
+</tr></thead>
+<tbody>
+        <tr>
+            <td><strong>aes</strong></td>
+            <td>algorithm</td>
+            <td>2.16.840.1.101.3.4.1</td>
+            <td>—</td>
+            <td>—</td>
+        </tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>Dependency and Component Inventory (78)</h2>
+<table>
+<thead><tr>
+<th>Component</th><th>Version</th><th>Type</th><th>Group</th>
+</tr></thead>
+<tbody>
+        <tr>
+            <td>cryptography-cffi</td>
+            <td>0.50.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cryptography-crypto</td>
+            <td>0.50.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cryptography-keepalive</td>
+            <td>0.50.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cryptography-key-parsing</td>
+            <td>0.50.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cryptography-openssl</td>
+            <td>0.50.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cryptography-x509</td>
+            <td>0.50.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cryptography-x509-verification</td>
+            <td>0.50.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>asn1</td>
+            <td>0.24.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>asn1_derive</td>
+            <td>0.24.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>base64</td>
+            <td>0.23.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>bitflags</td>
+            <td>2.13.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cc</td>
+            <td>1.4.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cfg-if</td>
+            <td>1.0.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>find-msvc-tools</td>
+            <td>0.1.9</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>foreign-types-shared</td>
+            <td>0.1.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>foreign-types</td>
+            <td>0.3.2</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>heck</td>
+            <td>0.5.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>itoa</td>
+            <td>1.0.18</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>libc</td>
+            <td>0.2.189</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>once_cell</td>
+            <td>1.21.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>openssl-macros</td>
+            <td>0.1.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>openssl-sys</td>
+            <td>0.9.117</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>openssl</td>
+            <td>0.10.81</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pem</td>
+            <td>4.0.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pkg-config</td>
+            <td>0.3.33</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>portable-atomic</td>
+            <td>1.14.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>proc-macro2</td>
+            <td>1.0.107</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pyo3-build-config</td>
+            <td>0.29.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pyo3-ffi</td>
+            <td>0.29.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pyo3-macros-backend</td>
+            <td>0.29.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pyo3-macros</td>
+            <td>0.29.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pyo3</td>
+            <td>0.29.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>quote</td>
+            <td>1.0.47</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>self_cell</td>
+            <td>1.3.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>shlex</td>
+            <td>2.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>syn</td>
+            <td>2.0.119</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>target-lexicon</td>
+            <td>0.13.5</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>unicode-ident</td>
+            <td>1.0.24</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>vcpkg</td>
+            <td>0.2.15</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>openssl</td>
+            <td>4.0.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>async-timeout</td>
+            <td>4.0.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>attrs</td>
+            <td>23.1.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>blinker</td>
+            <td>1.6.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cachelib</td>
+            <td>0.9.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cffi</td>
+            <td>2.1.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>click</td>
+            <td>8.1.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>colorama</td>
+            <td>0.4.6</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>coverage</td>
+            <td>7.2.7</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cryptography</td>
+            <td>50.0.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>flasgger</td>
+            <td>0.9.7b2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>flask</td>
+            <td>2.3.2</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>flask-caching</td>
+            <td>2.0.2</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>iniconfig</td>
+            <td>2.0.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>itsdangerous</td>
+            <td>2.1.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>jinja2</td>
+            <td>3.1.2</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>json-logging-py</td>
+            <td>0.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>jsonformatter</td>
+            <td>0.3.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>jsonschema</td>
+            <td>4.17.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>markupsafe</td>
+            <td>2.1.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>mistune</td>
+            <td>3.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>packaging</td>
+            <td>23.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>peewee</td>
+            <td>3.16.2</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pluggy</td>
+            <td>1.2.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>prometheus-client</td>
+            <td>0.17.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>prometheus-flask-exporter</td>
+            <td>0.22.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>psycopg2</td>
+            <td>2.9.6</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pycparser</td>
+            <td>3.12</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pyrsistent</td>
+            <td>0.19.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pytest</td>
+            <td>7.4.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pytest-cov</td>
+            <td>4.1.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pytest-mock</td>
+            <td>3.11.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>python-json-logger</td>
+            <td>2.0.7</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pyyaml</td>
+            <td>6.0.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>redis</td>
+            <td>4.6.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>six</td>
+            <td>1.16.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>voluptuous</td>
+            <td>0.13.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>werkzeug</td>
+            <td>2.3.6</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>pip</td>
+            <td>24.0</td>
+            <td>library</td>
+            <td></td>
+        </tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>Important Limitations</h2>
+<div class="note">
+This report displays only information present in the supplied CycloneDX JSON.
+A missing cryptographic asset does not prove that the application does not use
+cryptography. Detection depends on scanner coverage and successful analysis.
+This report does not perform vulnerability analysis or provide remediation recommendations.
+</div>
+</section>
+</main>
+<footer>Generated from CycloneDX JSON | CBOM Proof of Concept</footer>
+</body>
+</html>

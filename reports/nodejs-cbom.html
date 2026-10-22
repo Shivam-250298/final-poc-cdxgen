@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NODEJS | CBOM Report</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f6fb; color: #172338;
+        font-family: Arial, Helvetica, sans-serif; }
+header { background: #14243c; color: white; padding: 34px 7%; }
+header h1 { margin: 0 0 8px; font-size: 29px; }
+header p { margin: 0; color: #c3d1e4; }
+main { max-width: 1200px; margin: 30px auto; padding: 0 22px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 16px; margin-bottom: 28px; }
+.card { background: white; border: 1px solid #e1e7f0; border-radius: 12px;
+         padding: 23px; }
+.card .value { font-size: 32px; font-weight: 700; color: #193e73; }
+.card .label { margin-top: 8px; color: #637187; font-size: 13px; }
+section { background: white; border: 1px solid #e1e7f0; border-radius: 12px;
+           margin-bottom: 24px; padding: 24px; overflow-x: auto; }
+h2 { font-size: 20px; margin: 0 0 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #edf2f9; color: #344761; text-align: left; }
+th, td { padding: 12px; border-bottom: 1px solid #e7ecf3;
+          overflow-wrap: anywhere; }
+tr:hover td { background: #f8faff; }
+.empty { text-align: center; color: #748095; padding: 28px; }
+.note { background: #f0f5fc; border-left: 4px solid #3769a5;
+         padding: 15px; line-height: 1.6; font-size: 13px; }
+.meta { font-size: 13px; color: #56657a; line-height: 1.9; }
+footer { text-align: center; padding: 20px; color: #748095; font-size: 12px; }
+@media print {
+  body { background: white; }
+  section, .card { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>NODEJS — Cryptographic Bill of Materials</h1>
+    <p>CycloneDX CBOM Analysis Report</p>
+</header>
+<main>
+<div class="cards">
+    <div class="card"><div class="value">68</div>
+        <div class="label">Total Components</div></div>
+    <div class="card"><div class="value">0</div>
+        <div class="label">Cryptographic Assets</div></div>
+    <div class="card"><div class="value">68</div>
+        <div class="label">Other Components</div></div>
+    <div class="card"><div class="value">1.7</div>
+        <div class="label">CycloneDX Version</div></div>
+</div>
+
+<section>
+<h2>Report Information</h2>
+<div class="meta">
+<strong>Project:</strong> NODEJS<br>
+<strong>BOM Format:</strong> CycloneDX<br>
+<strong>Serial Number:</strong> urn:uuid:3d95157d-cef0-470e-a424-fdffc5485e5e<br>
+<strong>Tool:</strong> cdxgen 13.4.0<br>
+<strong>HTML Generated:</strong> 22 Oct 2026, 18:29 UTC
+</div>
+</section>
+
+<section>
+<h2>Cryptographic Assets (0)</h2>
+<table>
+<thead><tr>
+<th>Algorithm / Asset</th><th>Asset Type</th><th>OID</th>
+<th>Primitive</th><th>Algorithm Family</th>
+</tr></thead>
+<tbody><tr><td colspan="5" class="empty">No cryptographic assets recorded in this CBOM.</td></tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>Dependency and Component Inventory (68)</h2>
+<table>
+<thead><tr>
+<th>Component</th><th>Version</th><th>Type</th><th>Group</th>
+</tr></thead>
+<tbody>
+        <tr>
+            <td>express</td>
+            <td>4.22.3</td>
+            <td>framework</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>accepts</td>
+            <td>1.3.8</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>mime-types</td>
+            <td>2.1.35</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>mime-db</td>
+            <td>1.52.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>negotiator</td>
+            <td>0.6.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>array-flatten</td>
+            <td>1.1.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>body-parser</td>
+            <td>1.20.9</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>bytes</td>
+            <td>3.1.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>content-type</td>
+            <td>1.0.5</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>debug</td>
+            <td>2.6.9</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ms</td>
+            <td>2.0.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>depd</td>
+            <td>2.0.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>destroy</td>
+            <td>1.2.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>http-errors</td>
+            <td>2.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>inherits</td>
+            <td>2.0.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>setprototypeof</td>
+            <td>1.2.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>statuses</td>
+            <td>2.0.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>toidentifier</td>
+            <td>1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>iconv-lite</td>
+            <td>0.4.24</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>safer-buffer</td>
+            <td>2.1.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>on-finished</td>
+            <td>2.4.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ee-first</td>
+            <td>1.1.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>qs</td>
+            <td>6.16.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>es-define-property</td>
+            <td>1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>side-channel</td>
+            <td>1.1.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>es-errors</td>
+            <td>1.3.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>object-inspect</td>
+            <td>1.13.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>side-channel-list</td>
+            <td>1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>side-channel-map</td>
+            <td>1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>call-bound</td>
+            <td>1.0.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>call-bind-apply-helpers</td>
+            <td>1.0.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>function-bind</td>
+            <td>1.1.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>get-intrinsic</td>
+            <td>1.3.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>es-object-atoms</td>
+            <td>1.1.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>get-proto</td>
+            <td>1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>dunder-proto</td>
+            <td>1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>gopd</td>
+            <td>1.2.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>has-symbols</td>
+            <td>1.1.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hasown</td>
+            <td>2.0.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>math-intrinsics</td>
+            <td>1.1.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>side-channel-weakmap</td>
+            <td>1.0.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>raw-body</td>
+            <td>2.5.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>unpipe</td>
+            <td>1.0.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>type-is</td>
+            <td>1.6.18</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>media-typer</td>
+            <td>0.3.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>content-disposition</td>
+            <td>0.5.4</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>safe-buffer</td>
+            <td>5.2.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cookie</td>
+            <td>0.7.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>cookie-signature</td>
+            <td>1.0.7</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>encodeurl</td>
+            <td>2.0.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>escape-html</td>
+            <td>1.0.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>etag</td>
+            <td>1.8.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>finalhandler</td>
+            <td>1.3.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>parseurl</td>
+            <td>1.3.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>fresh</td>
+            <td>0.5.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>merge-descriptors</td>
+            <td>1.0.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>methods</td>
+            <td>1.1.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>path-to-regexp</td>
+            <td>0.1.13</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>proxy-addr</td>
+            <td>2.0.8</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>forwarded</td>
+            <td>0.2.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ipaddr.js</td>
+            <td>1.9.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>range-parser</td>
+            <td>1.2.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>send</td>
+            <td>0.19.2</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>mime</td>
+            <td>1.6.0</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ms</td>
+            <td>2.1.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>serve-static</td>
+            <td>1.16.3</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>utils-merge</td>
+            <td>1.0.1</td>
+            <td>library</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>vary</td>
+            <td>1.1.2</td>
+            <td>library</td>
+            <td></td>
+        </tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>Important Limitations</h2>
+<div class="note">
+This report displays only information present in the supplied CycloneDX JSON.
+A missing cryptographic asset does not prove that the application does not use
+cryptography. Detection depends on scanner coverage and successful analysis.
+This report does not perform vulnerability analysis or provide remediation recommendations.
+</div>
+</section>
+</main>
+<footer>Generated from CycloneDX JSON | CBOM Proof of Concept</footer>
+</body>
+</html>
