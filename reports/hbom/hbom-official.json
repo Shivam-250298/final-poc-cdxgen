@@ -1,0 +1,6024 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:211f98fa-8e89-4948-822e-149cdbe8cad6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-10-23T03:51:47.097Z",
+    "lifecycles": [
+      {
+        "phase": "operations"
+      }
+    ],
+    "component": {
+      "type": "device",
+      "name": "c7i-flex.large",
+      "version": "6.143.8",
+      "manufacturer": {
+        "name": "Amazon EC2"
+      },
+      "description": "Intel(R) Xeon(R) Platinum 8488C",
+      "properties": [
+        {
+          "name": "cdx:hbom:platform",
+          "value": "linux"
+        },
+        {
+          "name": "cdx:hbom:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "cdx:hbom:chip",
+          "value": "Intel(R) Xeon(R) Platinum 8488C"
+        },
+        {
+          "name": "cdx:hbom:memory",
+          "value": "3.7 GB"
+        },
+        {
+          "name": "cdx:hbom:boardVendor",
+          "value": "Amazon EC2"
+        },
+        {
+          "name": "cdx:hbom:biosVendor",
+          "value": "Amazon EC2"
+        },
+        {
+          "name": "cdx:hbom:biosVersion",
+          "value": "1.0"
+        },
+        {
+          "name": "cdx:hbom:firmwareDate",
+          "value": "10/16/2017"
+        },
+        {
+          "name": "cdx:hbom:chassisType",
+          "value": "vm"
+        },
+        {
+          "name": "cdx:hbom:identifierPolicy",
+          "value": "redacted-by-default"
+        },
+        {
+          "name": "cdx:hostview:mode",
+          "value": "hbom-topology"
+        },
+        {
+          "name": "cdx:hostview:hardwareComponentCount",
+          "value": "59"
+        },
+        {
+          "name": "cdx:hostview:runtimeComponentCount",
+          "value": "0"
+        },
+        {
+          "name": "cdx:hostview:runtimeAnchorCount",
+          "value": "0"
+        },
+        {
+          "name": "cdx:hostview:linkedHardwareComponentCount",
+          "value": "0"
+        },
+        {
+          "name": "cdx:hostview:topologyLinkCount",
+          "value": "0"
+        }
+      ],
+      "bom-ref": "urn:cdxgen:host:device:c7i-flex.large:linux"
+    },
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "name": "cdx-hbom"
+        }
+      ]
+    },
+    "properties": []
+  },
+  "components": [
+    {
+      "name": "Intel(R) Xeon(R) Platinum 8488C",
+      "version": "amd64",
+      "manufacturer": {
+        "name": "GenuineIntel"
+      },
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "processor"
+        },
+        {
+          "name": "cdx:hbom:architecture",
+          "value": "x86_64"
+        },
+        {
+          "name": "cdx:hbom:addressSizes",
+          "value": "46 bits physical, 48 bits virtual"
+        },
+        {
+          "name": "cdx:hbom:byteOrder",
+          "value": "Little Endian"
+        },
+        {
+          "name": "cdx:hbom:coreCount",
+          "value": "1"
+        },
+        {
+          "name": "cdx:hbom:logicalCpuCount",
+          "value": "2"
+        },
+        {
+          "name": "cdx:hbom:socketCount",
+          "value": "1"
+        },
+        {
+          "name": "cdx:hbom:threadsPerCore",
+          "value": "2"
+        },
+        {
+          "name": "cdx:hbom:onlineCpuSet",
+          "value": "0,1"
+        },
+        {
+          "name": "cdx:hbom:numaNodeCount",
+          "value": "1"
+        },
+        {
+          "name": "cdx:hbom:opModes",
+          "value": "32-bit, 64-bit"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "GenuineIntel"
+        },
+        {
+          "name": "cdx:hbom:cpuFamily",
+          "value": "6"
+        },
+        {
+          "name": "cdx:hbom:model",
+          "value": "143"
+        },
+        {
+          "name": "cdx:hbom:stepping",
+          "value": "8"
+        },
+        {
+          "name": "cdx:hbom:microcodeVersion",
+          "value": "721421936"
+        },
+        {
+          "name": "cdx:hbom:featureCount",
+          "value": "121"
+        },
+        {
+          "name": "cdx:hbom:cpuFeatures",
+          "value": "3dnowprefetch, abm, adx, aes, amx_bf16, amx_int8, amx_tile, apic, arat, arch_capabilities, avx, avx_vnni, avx2, avx512_bf16, avx512_bitalg, avx512_fp16, avx512_vbmi2, avx512_vnni, avx512_vpopcntdq, avx512bw, avx512cd, avx512dq, avx512f, avx512ifma, avx512vbmi, avx512vl, bmi1, bmi2, cldemote, clflush, clflushopt, clwb, cmov, constant_tsc, cpuid, cpuid_fault, cx8, cx16, de, erms, f16c, flush_l1d, fma, fpu, fpu_exception, fsgsbase, fxsr, gfni, ht, hypervisor, ibpb, ibrs, ibrs_enhanced, ida, invpcid, lahf_lm, lm, mca, mce, md_clear, mmx, movbe, movdir64b, movdiri, msr, mtrr, nonstop_tsc, nopl, nx, ospke, pae, pat, pcid, pclmulqdq, pdcm, pdpe1gb, pge, pku, pni, popcnt, pse, pse36, rdpid, rdrand, rdseed, rdtscp, rep_good, sep, serialize, sha_ni, smap, smep, ss, ssbd, sse, sse2, sse4_1, sse4_2, ssse3, stibp, syscall, tme, tsc, tsc_adjust, tsc_deadline_timer, tsc_known_freq, umip, vaes, vme, vpclmulqdq, waitpkg, wbnoinvd, wp, x2apic, x86-64, xgetbv1, xsave, xsavec, xsaveopt, xsaves, xtopology"
+        },
+        {
+          "name": "cdx:hbom:availableGovernors",
+          "value": "Not, Available"
+        },
+        {
+          "name": "cdx:hbom:boostSupported",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:boostActive",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:currentFrequencies",
+          "value": "Unable to call hardware, Unable to call to kernel"
+        },
+        {
+          "name": "cdx:hbom:idleDriver",
+          "value": "none"
+        },
+        {
+          "name": "cdx:hbom:idleGovernor",
+          "value": "menu"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:processor:Intel-R-Xeon-R-Platinum-8488C:amd64"
+    },
+    {
+      "name": "System Memory",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "memory"
+        },
+        {
+          "name": "cdx:hbom:size",
+          "value": "3.7 GB"
+        },
+        {
+          "name": "cdx:hbom:sizeBytes",
+          "value": "3999264768"
+        },
+        {
+          "name": "cdx:hbom:memoryRangeCount",
+          "value": "2"
+        },
+        {
+          "name": "cdx:hbom:memoryOnlineSize",
+          "value": "4.0 GB"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:memory:System-Memory:unknown"
+    },
+    {
+      "name": "Motherboard",
+      "manufacturer": {
+        "name": "Amazon EC2"
+      },
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "board"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:board:Motherboard:unknown"
+    },
+    {
+      "type": "firmware",
+      "name": "1.0",
+      "version": "1.0",
+      "manufacturer": {
+        "name": "Amazon EC2"
+      },
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "firmware"
+        },
+        {
+          "name": "cdx:hbom:firmwareDate",
+          "value": "10/16/2017"
+        }
+      ],
+      "bom-ref": "urn:cdxgen:component:firmware:firmware:1.0:1.0"
+    },
+    {
+      "name": "vm",
+      "manufacturer": {
+        "name": "Amazon EC2"
+      },
+      "type": "device",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "chassis"
+        }
+      ],
+      "bom-ref": "urn:cdxgen:component:device:chassis:vm:unknown"
+    },
+    {
+      "name": "Amazon Elastic Block Store",
+      "version": "nvme0n1",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "NVMe disk",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "storage"
+        },
+        {
+          "name": "cdx:hbom:capacityBytes",
+          "value": "32212254720"
+        },
+        {
+          "name": "cdx:hbom:capacity",
+          "value": "30 GB"
+        },
+        {
+          "name": "cdx:hbom:deviceSerial",
+          "value": "redacted:6006"
+        },
+        {
+          "name": "cdx:hbom:subsystem",
+          "value": "block"
+        },
+        {
+          "name": "cdx:hbom:isRemovable",
+          "value": "false"
+        },
+        {
+          "name": "cdx:hbom:isRotational",
+          "value": "false"
+        },
+        {
+          "name": "cdx:hbom:transport",
+          "value": "nvme"
+        },
+        {
+          "name": "cdx:hbom:blockSize",
+          "value": "512"
+        },
+        {
+          "name": "cdx:hbom:firmwareVersion",
+          "value": "2.0"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:00:04.0"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "nvme"
+        },
+        {
+          "name": "cdx:hbom:state",
+          "value": "live"
+        },
+        {
+          "name": "cdx:hbom:nqn",
+          "value": "nqn:2008-08.com.amazon.aws:ebs:vol06b3c6479702e6006"
+        },
+        {
+          "name": "cdx:hbom:wwid",
+          "value": "uuid.f2e7a62d-ce4a-5b53-90a3-8e3fb62df35b"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), nvm_express, nvme"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:storage:Amazon-Elastic-Block-Store:pci-0000:00:04.0"
+    },
+    {
+      "name": "Elastic Network Adapter (ENA)",
+      "version": "enp39s0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "Ethernet interface",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "network-interface"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "ena"
+        },
+        {
+          "name": "cdx:hbom:macAddress",
+          "value": "redacted:6:43"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "0000:27:00.0"
+        },
+        {
+          "name": "cdx:hbom:kernelVersion",
+          "value": "6.17.0-1017-aws"
+        },
+        {
+          "name": "cdx:hbom:operState",
+          "value": "UP"
+        },
+        {
+          "name": "cdx:hbom:mtu",
+          "value": "9001"
+        },
+        {
+          "name": "cdx:hbom:ifindex",
+          "value": "2"
+        },
+        {
+          "name": "cdx:hbom:linkType",
+          "value": "ether"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:linkDetected",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), ethernet, physical (Physical interface)"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:network-interface:Elastic-Network-Adapter-ENA:0000:27:00.0"
+    },
+    {
+      "name": "nvme",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "sensor"
+        },
+        {
+          "name": "cdx:hbom:temperatureSensorCount",
+          "value": "1"
+        },
+        {
+          "name": "cdx:hbom:temperatureReadings",
+          "value": "Composite: -273.15°C"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:sensor:nvme:unknown"
+    },
+    {
+      "name": "Amazon Elastic Block Store",
+      "version": "2.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "NVMe device",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "storage-controller"
+        },
+        {
+          "name": "cdx:hbom:transport",
+          "value": "pcie"
+        },
+        {
+          "name": "cdx:hbom:state",
+          "value": "live"
+        },
+        {
+          "name": "cdx:hbom:pciAddress",
+          "value": "0000:00:04.0"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "nvme"
+        },
+        {
+          "name": "cdx:hbom:namespaceCount",
+          "value": "1"
+        },
+        {
+          "name": "cdx:hbom:namespaces",
+          "value": "nvme0n1"
+        },
+        {
+          "name": "cdx:hbom:deviceSerial",
+          "value": "redacted:6006"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:00:04.0"
+        },
+        {
+          "name": "cdx:hbom:nqn",
+          "value": "nqn:2008-08.com.amazon.aws:ebs:vol06b3c6479702e6006"
+        },
+        {
+          "name": "cdx:hbom:wwid",
+          "value": "uuid.f2e7a62d-ce4a-5b53-90a3-8e3fb62df35b"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), nvm_express, nvme"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:storage-controller:Amazon-Elastic-Block-Store:pci-0000:00:04.0"
+    },
+    {
+      "name": "440FX - 82441FX PMC [Natoma]",
+      "version": "0000:00:00.0",
+      "manufacturer": {
+        "name": "Intel Corporation"
+      },
+      "description": "Host bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:00:00.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "Host bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0600"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "8086"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "1237"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "440FX - 82441FX PMC [Natoma] [1237]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "1237"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00008086d00001237sv00001D0Fsd00001237bc06sc00i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:00:00.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:440FX-82441FX-PMC-Natoma:pci-0000:00:00.0"
+    },
+    {
+      "name": "82371SB PIIX3 ISA [Natoma/Triton II]",
+      "version": "0000:00:01.0",
+      "manufacturer": {
+        "name": "Intel Corporation"
+      },
+      "description": "ISA bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:00:01.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "ISA bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0601"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "8086"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "7000"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "0000"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0000"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00008086d00007000sv00000000sd00000000bc06sc01i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:00:01.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), isa"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:82371SB-PIIX3-ISA-Natoma-Triton-II:pci-0000:00:01.0"
+    },
+    {
+      "name": "82371AB/EB/MB PIIX4 ACPI",
+      "version": "0000:00:01.3",
+      "manufacturer": {
+        "name": "Intel Corporation"
+      },
+      "description": "Non-VGA unclassified device",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:00:01.3"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "Non-VGA unclassified device"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0000"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "8086"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "7113"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "0000"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0000"
+        },
+        {
+          "name": "cdx:hbom:revision",
+          "value": "08"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00008086d00007113sv00000000sd00000000bc00sc00i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:00:01.3"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "08"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering)"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:82371AB-EB-MB-PIIX4-ACPI:pci-0000:00:01.3"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:00:03.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "VGA compatible controller",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:00:03.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "VGA compatible controller"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0300"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "1111"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "0000"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0000"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00001111sv00000000sd00000000bc03sc00i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:00:03.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), fb (framebuffer), vga_controller"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:00:03.0"
+    },
+    {
+      "name": "NVMe EBS Controller",
+      "version": "0000:00:04.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "Non-Volatile memory controller",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:00:04.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "Non-Volatile memory controller"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0108"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "8061"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "NVMe EBS Controller [0000]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0000"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "nvme"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00008061sv00001D0Fsd00000000bc01sc08i02"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:00:04.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "2.0"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), nvm_express, nvme"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:NVMe-EBS-Controller:pci-0000:00:04.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:01:00.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:01:00.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:01:00.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:01:00.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:02:00.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:02:00.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:02:00.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:02:00.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:00.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:00.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:00.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:00.1",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:00.1"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:00.1"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.1"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:00.2",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:00.2"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:00.2"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.2"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:00.3",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:00.3"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:00.3"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.3"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:00.4",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:00.4"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:00.4"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.4"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:00.5",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:00.5"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:00.5"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.5"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:00.6",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:00.6"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:00.6"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.6"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:00.7",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:00.7"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:00.7"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.7"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:01.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:01.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:01.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:01.1",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:01.1"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:01.1"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.1"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:01.2",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:01.2"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:01.2"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.2"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:01.3",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:01.3"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:01.3"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.3"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:01.4",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:01.4"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:01.4"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.4"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:01.5",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:01.5"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:01.5"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.5"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:01.6",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:01.6"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:01.6"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.6"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:01.7",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:01.7"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:01.7"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.7"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:02.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:02.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:02.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:02.1",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:02.1"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:02.1"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.1"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:02.2",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:02.2"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:02.2"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.2"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:02.3",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:02.3"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:02.3"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.3"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:02.4",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:02.4"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:02.4"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.4"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:02.5",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:02.5"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:02.5"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.5"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:02.6",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:02.6"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:02.6"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.6"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:02.7",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:02.7"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:02.7"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.7"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:03.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:03.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:03.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:03.1",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:03.1"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:03.1"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.1"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:03.2",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:03.2"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:03.2"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.2"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:03.3",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:03.3"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:03.3"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.3"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:03.4",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:03.4"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:03.4"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.4"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:03.5",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:03.5"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:03.5"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.5"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:03.6",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:03.6"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:03.6"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.6"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:03:03.7",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:03:03.7"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:03:03.7"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.7"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:24:00.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:24:00.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:24:00.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "64"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:24:00.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:25:00.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:25:00.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:25:00.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:25:00.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:26:00.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:26:00.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:26:00.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:26:00.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:26:00.1",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:26:00.1"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:26:00.1"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:26:00.1"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:26:00.2",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:26:00.2"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:26:00.2"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:26:00.2"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "0000:26:00.3",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "PCI bridge",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:26:00.3"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "PCI bridge"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0604"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Device [0200]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "pcieport"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd00000200sv00001D0Fsd00000200bc06sc04i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:26:00.3"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), normal_decode, pci"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:26:00.3"
+    },
+    {
+      "name": "Elastic Network Adapter (ENA)",
+      "version": "0000:27:00.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "Ethernet controller",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "pci-device"
+        },
+        {
+          "name": "cdx:hbom:pciSlot",
+          "value": "0000:27:00.0"
+        },
+        {
+          "name": "cdx:hbom:pciClass",
+          "value": "Ethernet controller"
+        },
+        {
+          "name": "cdx:hbom:pciClassCode",
+          "value": "0200"
+        },
+        {
+          "name": "cdx:hbom:vendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:productId",
+          "value": "ec20"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendor",
+          "value": "Amazon.com, Inc. [1d0f]"
+        },
+        {
+          "name": "cdx:hbom:subsystemDevice",
+          "value": "Elastic Network Adapter (ENA) [ec20]"
+        },
+        {
+          "name": "cdx:hbom:subsystemVendorId",
+          "value": "1d0f"
+        },
+        {
+          "name": "cdx:hbom:subsystemDeviceId",
+          "value": "ec20"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "ena"
+        },
+        {
+          "name": "cdx:hbom:modalias",
+          "value": "pci:v00001D0Fd0000EC20sv00001D0Fsd0000EC20bc02sc00i00"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:27:00.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "64"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), cap_list (PCI capabilities listing), ethernet, physical (Physical interface)"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:pci-device:Elastic-Network-Adapter-ENA:pci-0000:27:00.0"
+    },
+    {
+      "name": "Amazon.com, Inc.",
+      "version": "card0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "VGA compatible controller",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "display-adapter"
+        },
+        {
+          "name": "cdx:hbom:driver",
+          "value": "simple-framebuffer"
+        },
+        {
+          "name": "cdx:hbom:busInfo",
+          "value": "pci@0000:00:03.0"
+        },
+        {
+          "name": "cdx:hbom:deviceRevision",
+          "value": "00"
+        },
+        {
+          "name": "cdx:hbom:clockHz",
+          "value": "33000000"
+        },
+        {
+          "name": "cdx:hbom:width",
+          "value": "32"
+        },
+        {
+          "name": "cdx:hbom:isClaimed",
+          "value": "true"
+        },
+        {
+          "name": "cdx:hbom:capabilities",
+          "value": "bus_master (bus mastering), fb (framebuffer), vga_controller"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:display-adapter:Amazon.com-Inc.:pci-0000:00:03.0"
+    },
+    {
+      "name": "Amazon Elastic Block Store",
+      "version": "2.0",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "NVM Express solid state drive",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "firmware-device"
+        },
+        {
+          "name": "cdx:hbom:plugin",
+          "value": "nvme"
+        },
+        {
+          "name": "cdx:hbom:flags",
+          "value": "internal, updatable, require-ac, needs-reboot, usable-during-update, can-emulation-tag"
+        },
+        {
+          "name": "cdx:hbom:guids",
+          "value": "ca8b51e7-5d74-526b-96fd-0a63c15386e0, 2fc5a70c-3a89-5023-a1b2-0f2322acc9f5"
+        },
+        {
+          "name": "cdx:hbom:instanceIds",
+          "value": "redacted:tore"
+        },
+        {
+          "name": "cdx:hbom:deviceSerial",
+          "value": "redacted:6006"
+        },
+        {
+          "name": "cdx:hbom:createdEpoch",
+          "value": "1792727506"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:firmware-device:Amazon-Elastic-Block-Store:2.0"
+    },
+    {
+      "name": "Elastic Network Adapter (ENA)",
+      "manufacturer": {
+        "name": "Amazon.com, Inc."
+      },
+      "description": "Devlink device (pci/0000:27:00.0)",
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "firmware-device"
+        },
+        {
+          "name": "cdx:hbom:plugin",
+          "value": "devlink"
+        },
+        {
+          "name": "cdx:hbom:flags",
+          "value": "can-emulation-tag"
+        },
+        {
+          "name": "cdx:hbom:createdEpoch",
+          "value": "1792727506"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:firmware-device:Elastic-Network-Adapter-ENA:unknown"
+    },
+    {
+      "name": "Xeon Platinum 8488C",
+      "version": "0x2b000670",
+      "manufacturer": {
+        "name": "Intel"
+      },
+      "properties": [
+        {
+          "name": "cdx:hbom:hardwareClass",
+          "value": "firmware-device"
+        },
+        {
+          "name": "cdx:hbom:plugin",
+          "value": "cpu"
+        },
+        {
+          "name": "cdx:hbom:flags",
+          "value": "internal"
+        },
+        {
+          "name": "cdx:hbom:guids",
+          "value": "1ccc5232-893b-532c-bd9c-25790431fdbb, 01006df3-3a7b-5fdc-b1f8-7d81c19e8bce"
+        },
+        {
+          "name": "cdx:hbom:instanceIds",
+          "value": "redacted:TP_8"
+        },
+        {
+          "name": "cdx:hbom:createdEpoch",
+          "value": "1792727506"
+        }
+      ],
+      "type": "device",
+      "bom-ref": "urn:cdxgen:component:device:firmware-device:Xeon-Platinum-8488C:0x2b000670"
+    }
+  ],
+  "properties": [
+    {
+      "name": "cdx:hbom:targetPlatform",
+      "value": "linux"
+    },
+    {
+      "name": "cdx:hbom:targetArchitecture",
+      "value": "amd64"
+    },
+    {
+      "name": "cdx:hbom:identifierPolicy",
+      "value": "redacted-by-default"
+    },
+    {
+      "name": "cdx:hbom:collectorProfile",
+      "value": "linux-amd64-v1"
+    },
+    {
+      "name": "cdx:hbom:osName",
+      "value": "Ubuntu"
+    },
+    {
+      "name": "cdx:hbom:osVersion",
+      "value": "24.04"
+    },
+    {
+      "name": "cdx:hbom:evidence:fileCount",
+      "value": "325"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/etc/os-release"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/proc/cpuinfo"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/proc/meminfo"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/product_name"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/product_version"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/sys_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/board_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/board_name"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/board_version"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/bios_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/bios_version"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/bios_date"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/chassis_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/devices/virtual/dmi/id/chassis_type"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/net/enp39s0/address"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/net/enp39s0/operstate"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/net/enp39s0/mtu"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/net/enp39s0/ifindex"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/net/enp39s0/type"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/block/nvme0n1/size"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/block/nvme0n1/queue/logical_block_size"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/block/nvme0n1/device/model"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/block/nvme0n1/device/serial"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/block/nvme0n1/removable"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/block/nvme0n1/queue/rotational"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/name"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_input"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_label"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_input"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_label"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_input"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_label"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_input"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_label"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_input"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/hwmon/hwmon0/temp1_label"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/nvme/nvme0/model"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/nvme/nvme0/serial"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/nvme/nvme0/firmware_rev"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/nvme/nvme0/transport"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/nvme/nvme0/state"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/nvme/nvme0/address"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/nvme/nvme0/device/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:00.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:00.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:00.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:00.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:00.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:00.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.3/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.3/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.3/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.3/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.3/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:01.3/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:03.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:03.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:03.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:03.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:03.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:03.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:04.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:04.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:04.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:04.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:04.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:00:04.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:01:00.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:01:00.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:01:00.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:01:00.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:01:00.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:01:00.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:02:00.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:02:00.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:02:00.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:02:00.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:02:00.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:02:00.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.1/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.1/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.1/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.1/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.1/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.1/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.2/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.2/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.2/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.2/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.2/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.2/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.3/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.3/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.3/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.3/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.3/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.3/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.4/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.4/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.4/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.4/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.4/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.4/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.5/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.5/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.5/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.5/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.5/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.5/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.6/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.6/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.6/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.6/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.6/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.6/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.7/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.7/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.7/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.7/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.7/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:00.7/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.1/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.1/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.1/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.1/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.1/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.1/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.2/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.2/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.2/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.2/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.2/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.2/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.3/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.3/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.3/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.3/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.3/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.3/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.4/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.4/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.4/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.4/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.4/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.4/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.5/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.5/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.5/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.5/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.5/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.5/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.6/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.6/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.6/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.6/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.6/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.6/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.7/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.7/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.7/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.7/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.7/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:01.7/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.1/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.1/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.1/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.1/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.1/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.1/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.2/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.2/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.2/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.2/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.2/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.2/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.3/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.3/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.3/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.3/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.3/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.3/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.4/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.4/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.4/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.4/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.4/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.4/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.5/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.5/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.5/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.5/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.5/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.5/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.6/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.6/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.6/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.6/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.6/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.6/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.7/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.7/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.7/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.7/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.7/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:02.7/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.1/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.1/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.1/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.1/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.1/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.1/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.2/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.2/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.2/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.2/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.2/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.2/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.3/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.3/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.3/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.3/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.3/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.3/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.4/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.4/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.4/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.4/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.4/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.4/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.5/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.5/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.5/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.5/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.5/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.5/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.6/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.6/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.6/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.6/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.6/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.6/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.7/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.7/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.7/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.7/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.7/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:03:03.7/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:24:00.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:24:00.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:24:00.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:24:00.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:24:00.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:24:00.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:25:00.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:25:00.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:25:00.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:25:00.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:25:00.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:25:00.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.1/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.1/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.1/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.1/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.1/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.1/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.2/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.2/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.2/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.2/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.2/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.2/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.3/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.3/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.3/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.3/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.3/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:26:00.3/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:27:00.0/class"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:27:00.0/vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:27:00.0/device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:27:00.0/subsystem_vendor"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:27:00.0/subsystem_device"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/bus/pci/devices/0000:27:00.0/modalias"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/drm/card0/device/uevent"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/drm/card0-Unknown-1/device/uevent"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/drm/card0-Unknown-1/edid"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/drm/card0-Unknown-1/status"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/drm/card0-Unknown-1/enabled"
+    },
+    {
+      "name": "cdx:hbom:evidence:file",
+      "value": "/sys/class/drm/card0-Unknown-1/modes"
+    },
+    {
+      "name": "cdx:hbom:evidence:commandCount",
+      "value": "14"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "lscpu-json|cpu-memory|lscpu -J"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "lsblk-json|storage|lsblk -J -b -O"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "ip-link-json|network|ip -j link show"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "lsmem-json|cpu-memory|lsmem --json"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "hostnamectl-json|platform|hostnamectl --json=short status"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "lshw-json|platform|lshw -json"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "lspci-vmmnn|bus|lspci -Dvmmnnk"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "fwupdmgr-devices-json|platform|fwupdmgr get-devices --json"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "boltctl-domains|bus|boltctl domains --verbose"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "boltctl-list-all|bus|boltctl list --all"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "mmcli-list-json|network|mmcli -L -J"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "ethtool-driver-info:enp39s0|network|ethtool -i enp39s0"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "cpupower-frequency-info|cpu-memory|cpupower frequency-info"
+    },
+    {
+      "name": "cdx:hbom:evidence:command",
+      "value": "cpupower-idle-info|cpu-memory|cpupower idle-info"
+    },
+    {
+      "name": "cdx:hbom:evidence:commandDiagnosticCount",
+      "value": "5"
+    },
+    {
+      "name": "cdx:hbom:evidence:commandDiagnostic",
+      "value": "{\"id\":\"lsusb\",\"category\":\"bus\",\"command\":\"lsusb\",\"args\":\"\",\"issue\":\"command-error\",\"code\":\"CDX_HBOM_COMMAND_FAILED\",\"exitCode\":1,\"message\":\"lsusb failed with command-error: exit code 1\",\"installHint\":\"Command not found: install the Linux package providing lsusb (commonly `usbutils`).\"}"
+    },
+    {
+      "name": "cdx:hbom:evidence:commandDiagnostic",
+      "value": "{\"id\":\"lsusb-verbose\",\"category\":\"bus\",\"command\":\"lsusb\",\"args\":\"-v\",\"issue\":\"command-error\",\"code\":\"CDX_HBOM_COMMAND_FAILED\",\"exitCode\":1,\"message\":\"lsusb-verbose failed with command-error: exit code 1\",\"installHint\":\"Command not found: install the Linux package providing lsusb (commonly `usbutils`).\"}"
+    },
+    {
+      "name": "cdx:hbom:evidence:commandDiagnostic",
+      "value": "{\"id\":\"drm-info-json\",\"category\":\"graphics\",\"command\":\"drm_info\",\"args\":\"-j\",\"issue\":\"missing-command\",\"code\":\"CDX_HBOM_COMMAND_NOT_FOUND\",\"message\":\"drm-info-json failed with missing-command: spawnSync drm_info ENOENT\",\"installHint\":\"Command not found: install the Linux package providing drm_info (commonly `drm-info`).\",\"privilegeHint\":\"Retry with --privileged to allow a non-interactive sudo attempt for permission-sensitive Linux commands.\"}"
+    },
+    {
+      "name": "cdx:hbom:evidence:commandDiagnostic",
+      "value": "{\"id\":\"upower-dump\",\"category\":\"power\",\"command\":\"upower\",\"args\":\"--dump\",\"issue\":\"missing-command\",\"code\":\"CDX_HBOM_COMMAND_NOT_FOUND\",\"message\":\"upower-dump failed with missing-command: spawnSync upower ENOENT\",\"installHint\":\"Command not found: install `upower`.\"}"
+    },
+    {
+      "name": "cdx:hbom:evidence:commandDiagnostic",
+      "value": "{\"id\":\"edid-decode\",\"category\":\"graphics\",\"command\":\"edid-decode\",\"args\":\"--help\",\"issue\":\"missing-command\",\"code\":\"CDX_HBOM_COMMAND_NOT_FOUND\",\"message\":\"edid-decode failed with missing-command: spawnSync edid-decode ENOENT\",\"installHint\":\"Command not found: install the Linux package providing edid-decode (commonly `edid-decode`).\"}"
+    },
+    {
+      "name": "cdx:hbom:analysis:commandDiagnosticCount",
+      "value": "5"
+    },
+    {
+      "name": "cdx:hbom:analysis:actionableDiagnosticCount",
+      "value": "3"
+    },
+    {
+      "name": "cdx:hbom:analysis:missingCommandCount",
+      "value": "3"
+    },
+    {
+      "name": "cdx:hbom:analysis:installHintCount",
+      "value": "3"
+    },
+    {
+      "name": "cdx:hbom:analysis:permissionDeniedCount",
+      "value": "0"
+    },
+    {
+      "name": "cdx:hbom:analysis:privilegeHintCount",
+      "value": "0"
+    },
+    {
+      "name": "cdx:hbom:analysis:partialSupportCount",
+      "value": "0"
+    },
+    {
+      "name": "cdx:hbom:analysis:timeoutCount",
+      "value": "0"
+    },
+    {
+      "name": "cdx:hbom:analysis:commandErrorCount",
+      "value": "2"
+    },
+    {
+      "name": "cdx:hbom:analysis:diagnosticIssues",
+      "value": "command-error,missing-command"
+    },
+    {
+      "name": "cdx:hbom:analysis:missingCommands",
+      "value": "drm_info,edid-decode,upower"
+    },
+    {
+      "name": "cdx:hbom:analysis:missingCommandIds",
+      "value": "drm-info-json,edid-decode,upower-dump"
+    },
+    {
+      "name": "cdx:hbom:analysis:commandErrorIds",
+      "value": "lsusb,lsusb-verbose"
+    },
+    {
+      "name": "cdx:hostview:mode",
+      "value": "hbom-topology"
+    },
+    {
+      "name": "cdx:hostview:hardwareComponentCount",
+      "value": "59"
+    },
+    {
+      "name": "cdx:hostview:runtimeComponentCount",
+      "value": "0"
+    },
+    {
+      "name": "cdx:hostview:runtimeAnchorCount",
+      "value": "0"
+    },
+    {
+      "name": "cdx:hostview:linkedHardwareComponentCount",
+      "value": "0"
+    },
+    {
+      "name": "cdx:hostview:topologyLinkCount",
+      "value": "0"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "urn:cdxgen:host:device:c7i-flex.large:linux",
+      "dependsOn": [
+        "urn:cdxgen:component:device:board:Motherboard:unknown",
+        "urn:cdxgen:component:device:chassis:vm:unknown",
+        "urn:cdxgen:component:device:display-adapter:Amazon.com-Inc.:pci-0000:00:03.0",
+        "urn:cdxgen:component:device:firmware-device:Amazon-Elastic-Block-Store:2.0",
+        "urn:cdxgen:component:device:firmware-device:Elastic-Network-Adapter-ENA:unknown",
+        "urn:cdxgen:component:device:firmware-device:Xeon-Platinum-8488C:0x2b000670",
+        "urn:cdxgen:component:device:memory:System-Memory:unknown",
+        "urn:cdxgen:component:device:network-interface:Elastic-Network-Adapter-ENA:0000:27:00.0",
+        "urn:cdxgen:component:device:pci-device:440FX-82441FX-PMC-Natoma:pci-0000:00:00.0",
+        "urn:cdxgen:component:device:pci-device:82371AB-EB-MB-PIIX4-ACPI:pci-0000:00:01.3",
+        "urn:cdxgen:component:device:pci-device:82371SB-PIIX3-ISA-Natoma-Triton-II:pci-0000:00:01.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:00:03.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:01:00.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:02:00.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.1",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.2",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.3",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.4",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.5",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.6",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:00.7",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.1",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.2",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.3",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.4",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.5",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.6",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:01.7",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.1",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.2",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.3",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.4",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.5",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.6",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:02.7",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.1",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.2",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.3",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.4",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.5",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.6",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:03:03.7",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:24:00.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:25:00.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:26:00.0",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:26:00.1",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:26:00.2",
+        "urn:cdxgen:component:device:pci-device:Amazon.com-Inc.:pci-0000:26:00.3",
+        "urn:cdxgen:component:device:pci-device:Elastic-Network-Adapter-ENA:pci-0000:27:00.0",
+        "urn:cdxgen:component:device:pci-device:NVMe-EBS-Controller:pci-0000:00:04.0",
+        "urn:cdxgen:component:device:processor:Intel-R-Xeon-R-Platinum-8488C:amd64",
+        "urn:cdxgen:component:device:sensor:nvme:unknown",
+        "urn:cdxgen:component:device:storage-controller:Amazon-Elastic-Block-Store:pci-0000:00:04.0",
+        "urn:cdxgen:component:device:storage:Amazon-Elastic-Block-Store:pci-0000:00:04.0",
+        "urn:cdxgen:component:firmware:firmware:1.0:1.0"
+      ]
+    }
+  ]
+}

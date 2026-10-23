@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Official HBOM Report</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f3f6fb;color:#172338;margin:0}
+header{background:#14243c;color:white;padding:35px 7%}
+main{max-width:1200px;margin:30px auto;padding:0 20px}
+section{background:white;padding:24px;margin-bottom:22px;border-radius:12px;overflow-x:auto}
+h2{font-size:20px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{padding:12px;border-bottom:1px solid #e7ecf3;text-align:left}
+th{background:#edf2f9}
+.cards{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:22px}
+.card{background:white;padding:22px;border-radius:12px;flex:1;min-width:150px}
+.card strong{display:block;font-size:30px;color:#193e73}
+.card span{font-size:13px;color:#637187}
+</style>
+</head>
+<body>
+<header>
+<h1>Hardware Bill of Materials (HBOM)</h1>
+<p>Official cdxgen HBOM Collector — Amazon EC2</p>
+</header>
+<main>
+<div class="cards">
+<div class="card"><strong>59</strong><span>Inventory Components</span></div>
+<div class="card"><strong>1</strong><span>Firmware Components</span></div>
+<div class="card"><strong>12</strong><span>Hardware Classes</span></div>
+<div class="card"><strong>1.7</strong><span>CycloneDX Version</span></div>
+</div>
+<section><h2>Report Information</h2>
+<p>Collector: cdx-hbom</p>
+<p>Generated: 2026-10-23T03:51:47.097Z</p>
+</section>
+<section><h2>Hardware Class Summary</h2>
+<table><tr><th>Class</th><th>Count</th></tr><tr><td>board</td><td>1</td></tr><tr><td>chassis</td><td>1</td></tr><tr><td>display-adapter</td><td>1</td></tr><tr><td>firmware</td><td>1</td></tr><tr><td>firmware-device</td><td>3</td></tr><tr><td>memory</td><td>1</td></tr><tr><td>network-interface</td><td>1</td></tr><tr><td>pci-device</td><td>46</td></tr><tr><td>processor</td><td>1</td></tr><tr><td>sensor</td><td>1</td></tr><tr><td>storage</td><td>1</td></tr><tr><td>storage-controller</td><td>1</td></tr></table></section>
+<section><h2>Hardware Inventory</h2>
+<table><tr><th>Component</th><th>Type</th><th>Class</th>
+<th>PCI Description</th><th>Bus</th></tr><tr><td>Intel(R) Xeon(R) Platinum 8488C</td><td>device</td><td>processor</td><td>—</td><td>—</td></tr><tr><td>System Memory</td><td>device</td><td>memory</td><td>—</td><td>—</td></tr><tr><td>Motherboard</td><td>device</td><td>board</td><td>—</td><td>—</td></tr><tr><td>1.0</td><td>firmware</td><td>firmware</td><td>—</td><td>—</td></tr><tr><td>vm</td><td>device</td><td>chassis</td><td>—</td><td>—</td></tr><tr><td>Amazon Elastic Block Store</td><td>device</td><td>storage</td><td>—</td><td>pci@0000:00:04.0</td></tr><tr><td>Elastic Network Adapter (ENA)</td><td>device</td><td>network-interface</td><td>—</td><td>0000:27:00.0</td></tr><tr><td>nvme</td><td>device</td><td>sensor</td><td>—</td><td>—</td></tr><tr><td>Amazon Elastic Block Store</td><td>device</td><td>storage-controller</td><td>—</td><td>pci@0000:00:04.0</td></tr><tr><td>440FX - 82441FX PMC [Natoma]</td><td>device</td><td>pci-device</td><td>Host bridge</td><td>pci@0000:00:00.0</td></tr><tr><td>82371SB PIIX3 ISA [Natoma/Triton II]</td><td>device</td><td>pci-device</td><td>ISA bridge</td><td>pci@0000:00:01.0</td></tr><tr><td>82371AB/EB/MB PIIX4 ACPI</td><td>device</td><td>pci-device</td><td>Non-VGA unclassified device</td><td>pci@0000:00:01.3</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>VGA compatible controller</td><td>pci@0000:00:03.0</td></tr><tr><td>NVMe EBS Controller</td><td>device</td><td>pci-device</td><td>Non-Volatile memory controller</td><td>pci@0000:00:04.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:01:00.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:02:00.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:00.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:00.1</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:00.2</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:00.3</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:00.4</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:00.5</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:00.6</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:00.7</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:01.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:01.1</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:01.2</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:01.3</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:01.4</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:01.5</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:01.6</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:01.7</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:02.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:02.1</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:02.2</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:02.3</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:02.4</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:02.5</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:02.6</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:02.7</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:03.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:03.1</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:03.2</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:03.3</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:03.4</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:03.5</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:03.6</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:03:03.7</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:24:00.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:25:00.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:26:00.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:26:00.1</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:26:00.2</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>pci-device</td><td>PCI bridge</td><td>pci@0000:26:00.3</td></tr><tr><td>Elastic Network Adapter (ENA)</td><td>device</td><td>pci-device</td><td>Ethernet controller</td><td>pci@0000:27:00.0</td></tr><tr><td>Amazon.com, Inc.</td><td>device</td><td>display-adapter</td><td>—</td><td>pci@0000:00:03.0</td></tr><tr><td>Amazon Elastic Block Store</td><td>device</td><td>firmware-device</td><td>—</td><td>—</td></tr><tr><td>Elastic Network Adapter (ENA)</td><td>device</td><td>firmware-device</td><td>—</td><td>—</td></tr><tr><td>Xeon Platinum 8488C</td><td>device</td><td>firmware-device</td><td>—</td><td>—</td></tr></table></section>
+<section><h2>Limitations</h2>
+<p>Guest-visible EC2 hardware only. Multiple entries may represent
+virtual PCI bridges or different views of the same hardware.
+The HTML excludes serial numbers, MAC addresses and instance IDs.
+See JSON for detailed collector metadata.</p></section>
+</main></body></html>
