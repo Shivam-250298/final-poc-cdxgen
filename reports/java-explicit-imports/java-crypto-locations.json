@@ -1,0 +1,149 @@
+[
+  {
+    "code": "AES",
+    "tags": "crypto-algorithm",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 28,
+    "column": 59
+  },
+  {
+    "code": "AES/GCM/NoPadding",
+    "tags": "crypto-algorithm",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 35,
+    "column": 44
+  },
+  {
+    "code": "HmacSHA256",
+    "tags": "crypto-algorithm",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 67,
+    "column": 35
+  },
+  {
+    "code": "HmacSHA256",
+    "tags": "crypto-algorithm",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 64,
+    "column": 59
+  },
+  {
+    "code": "doFinal(encrypted)",
+    "tags": "crypto, crypto-generate",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 40,
+    "column": 28
+  },
+  {
+    "code": "doFinal(encrypted)",
+    "tags": "crypto, crypto-generate",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 40,
+    "column": 43
+  },
+  {
+    "code": "doFinal(text.getBytes(StandardCharsets.UTF_8))",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 71,
+    "column": 13
+  },
+  {
+    "code": "doFinal(text.getBytes(StandardCharsets.UTF_8))",
+    "tags": "crypto, crypto-generate",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 71,
+    "column": 13
+  },
+  {
+    "code": "doFinal(text.getBytes(StandardCharsets.UTF_8))",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 37,
+    "column": 28
+  },
+  {
+    "code": "doFinal(text.getBytes(StandardCharsets.UTF_8))",
+    "tags": "crypto, crypto-generate",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 37,
+    "column": 28
+  },
+  {
+    "code": "generateKey()",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 30,
+    "column": 25
+  },
+  {
+    "code": "generateKey()",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 65,
+    "column": 25
+  },
+  {
+    "code": "getInstance(\"AES\")",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 28,
+    "column": 34
+  },
+  {
+    "code": "getInstance(\"AES/GCM/NoPadding\")",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 35,
+    "column": 25
+  },
+  {
+    "code": "getInstance(\"HmacSHA256\")",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 67,
+    "column": 19
+  },
+  {
+    "code": "getInstance(\"HmacSHA256\")",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 64,
+    "column": 34
+  },
+  {
+    "code": "init(256)",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 29,
+    "column": 9
+  },
+  {
+    "code": "init(Cipher.ENCRYPT_MODE, key, new GCMParameterSpec(128, iv))",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 36,
+    "column": 9
+  },
+  {
+    "code": "init(Cipher.ENCRYPT_MODE, key, new GCMParameterSpec(128, iv))",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 36,
+    "column": 42
+  },
+  {
+    "code": "init(key)",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 68,
+    "column": 9
+  },
+  {
+    "code": "init(key)",
+    "tags": "crypto",
+    "file": "src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java",
+    "line": 68,
+    "column": 18
+  }
+]

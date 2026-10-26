@@ -54,6 +54,96 @@ def generate(input_file, output_file):
     if not library_rows:
         library_rows = '<tr><td colspan="4" class="empty">No other components recorded.</td></tr>'
 
+
+    # CBOM_SOURCE_DETAILS_V1
+    locations_file = Path(input_file).with_name("java-crypto-locations.json")
+    locations = []
+    if locations_file.exists():
+        locations = json.loads(locations_file.read_text(encoding="utf-8"))
+        if not isinstance(locations, list):
+            raise ValueError("Source locations JSON must contain an array.")
+
+    location_rows = ""
+    for item in sorted(
+        locations,
+        key=lambda x: (
+            str(x.get("file") or ""),
+            x.get("line") or 0,
+            x.get("column") or 0,
+            str(x.get("code") or ""),
+        ),
+    ):
+        location_rows += (
+            "<tr>"
+            + "".join(
+                "<td>" + esc(item.get(key)) + "</td>"
+                for key in ("file", "line", "column", "code", "tags")
+            )
+            + "</tr>"
+        )
+    if not location_rows:
+        location_rows = (
+            '<tr><td colspan="5" class="empty">'
+            'No source locations supplied.</td></tr>'
+        )
+
+    location_section = f"""
+<section>
+<h2>Crypto Source Locations ({len(locations)} records)</h2>
+<p class="meta">Source: {esc(locations_file.name)} — extracted from
+the reachables analysis slices. These are source-analysis records;
+they are not evidence attached to individual CBOM assets.
+Multiple records can refer to the same operation.</p>
+<table>
+<thead><tr><th>File</th><th>Line</th><th>Column</th>
+<th>Code / Operation</th><th>Scanner Tags</th></tr></thead>
+<tbody>{location_rows}</tbody>
+</table>
+</section>
+"""
+
+    crypto_details = ""
+    for component in crypto:
+        crypto_details += (
+            "<details><summary>" + esc(component.get("name"))
+            + "</summary>"
+        )
+        for field in ("bom-ref", "description", "cryptoProperties",
+                      "properties", "evidence"):
+            value = component.get(field)
+            display = (
+                "Not recorded" if value is None
+                else json.dumps(value, ensure_ascii=False, indent=2)
+            )
+            crypto_details += (
+                "<h3>" + esc(field) + "</h3>"
+                '<pre style="white-space:pre-wrap;overflow-wrap:anywhere">'
+                + esc(display) + "</pre>"
+            )
+        crypto_details += "</details>"
+
+    detail_section = (
+        "<section><h2>Recorded Crypto Asset Details</h2>"
+        + (crypto_details or "<p>No cryptographic assets recorded.</p>")
+        + "</section>"
+    )
+
+    annotation_details = ""
+    for annotation in bom.get("annotations", []) or []:
+        annotation_details += (
+            '<pre style="white-space:pre-wrap;overflow-wrap:anywhere">'
+            + esc(json.dumps(annotation, ensure_ascii=False, indent=2))
+            + "</pre>"
+        )
+    annotation_section = (
+        "<section><h2>BOM Annotations</h2>"
+        '<p class="meta">Includes document descriptions and any audit '
+        'annotations recorded in this BOM. An annotation is not necessarily '
+        'an audit finding. No findings does not establish security.</p>'
+        + (annotation_details or "<p>No annotations recorded.</p>")
+        + "</section>"
+    )
+
     project = Path(input_file).stem.replace("-cbom", "").upper()
     generated = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
 
@@ -135,6 +225,10 @@ footer {{ text-align: center; padding: 20px; color: #748095; font-size: 12px; }}
 </table>
 </section>
 
+{location_section}
+{detail_section}
+{annotation_section}
+
 <section>
 <h2>Dependency and Component Inventory ({len(libraries)})</h2>
 <table>
@@ -148,7 +242,7 @@ footer {{ text-align: center; padding: 20px; color: #748095; font-size: 12px; }}
 <section>
 <h2>Important Limitations</h2>
 <div class="note">
-This report displays only information present in the supplied CycloneDX JSON.
+This report displays information from the supplied CycloneDX JSON and, when available, the separate source-location JSON. Missing fields are not inferred. Source locations apply to the source revision that was scanned.
 A missing cryptographic asset does not prove that the application does not use
 cryptography. Detection depends on scanner coverage and successful analysis.
 This report does not perform vulnerability analysis or provide remediation recommendations.

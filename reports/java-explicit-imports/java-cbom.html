@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JAVA | CBOM Report</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f6fb; color: #172338;
+        font-family: Arial, Helvetica, sans-serif; }
+header { background: #14243c; color: white; padding: 34px 7%; }
+header h1 { margin: 0 0 8px; font-size: 29px; }
+header p { margin: 0; color: #c3d1e4; }
+main { max-width: 1200px; margin: 30px auto; padding: 0 22px; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 16px; margin-bottom: 28px; }
+.card { background: white; border: 1px solid #e1e7f0; border-radius: 12px;
+         padding: 23px; }
+.card .value { font-size: 32px; font-weight: 700; color: #193e73; }
+.card .label { margin-top: 8px; color: #637187; font-size: 13px; }
+section { background: white; border: 1px solid #e1e7f0; border-radius: 12px;
+           margin-bottom: 24px; padding: 24px; overflow-x: auto; }
+h2 { font-size: 20px; margin: 0 0 18px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #edf2f9; color: #344761; text-align: left; }
+th, td { padding: 12px; border-bottom: 1px solid #e7ecf3;
+          overflow-wrap: anywhere; }
+tr:hover td { background: #f8faff; }
+.empty { text-align: center; color: #748095; padding: 28px; }
+.note { background: #f0f5fc; border-left: 4px solid #3769a5;
+         padding: 15px; line-height: 1.6; font-size: 13px; }
+.meta { font-size: 13px; color: #56657a; line-height: 1.9; }
+footer { text-align: center; padding: 20px; color: #748095; font-size: 12px; }
+@media print {
+  body { background: white; }
+  section, .card { break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>JAVA — Cryptographic Bill of Materials</h1>
+    <p>CycloneDX CBOM Analysis Report</p>
+</header>
+<main>
+<div class="cards">
+    <div class="card"><div class="value">130</div>
+        <div class="label">Total Components</div></div>
+    <div class="card"><div class="value">3</div>
+        <div class="label">Cryptographic Assets</div></div>
+    <div class="card"><div class="value">127</div>
+        <div class="label">Other Components</div></div>
+    <div class="card"><div class="value">1.7</div>
+        <div class="label">CycloneDX Version</div></div>
+</div>
+
+<section>
+<h2>Report Information</h2>
+<div class="meta">
+<strong>Project:</strong> JAVA<br>
+<strong>BOM Format:</strong> CycloneDX<br>
+<strong>Serial Number:</strong> urn:uuid:cd32f7a5-bc06-4871-a7c7-1ac23dd48c22<br>
+<strong>Tool:</strong> cdxgen 13.5.0<br>
+<strong>HTML Generated:</strong> 26 Oct 2026, 07:18 UTC
+</div>
+</section>
+
+<section>
+<h2>Cryptographic Assets (3)</h2>
+<table>
+<thead><tr>
+<th>Algorithm / Asset</th><th>Asset Type</th><th>OID</th>
+<th>Primitive</th><th>Algorithm Family</th>
+</tr></thead>
+<tbody>
+        <tr>
+            <td><strong>aes</strong></td>
+            <td>algorithm</td>
+            <td>2.16.840.1.101.3.4.1</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>hmacSHA</strong></td>
+            <td>algorithm</td>
+            <td>1.3.6.1.5.5.8.1.2</td>
+            <td>—</td>
+            <td>—</td>
+        </tr>
+        <tr>
+            <td><strong>sha-256</strong></td>
+            <td>algorithm</td>
+            <td>2.16.840.1.101.3.4.2.1</td>
+            <td>—</td>
+            <td>—</td>
+        </tr></tbody>
+</table>
+</section>
+
+
+<section>
+<h2>Crypto Source Locations (21 records)</h2>
+<p class="meta">Source: java-crypto-locations.json — extracted from
+the reachables analysis slices. These are source-analysis records;
+they are not evidence attached to individual CBOM assets.
+Multiple records can refer to the same operation.</p>
+<table>
+<thead><tr><th>File</th><th>Line</th><th>Column</th>
+<th>Code / Operation</th><th>Scanner Tags</th></tr></thead>
+<tbody><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>28</td><td>34</td><td>getInstance(&quot;AES&quot;)</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>28</td><td>59</td><td>AES</td><td>crypto-algorithm</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>29</td><td>9</td><td>init(256)</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>30</td><td>25</td><td>generateKey()</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>35</td><td>25</td><td>getInstance(&quot;AES/GCM/NoPadding&quot;)</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>35</td><td>44</td><td>AES/GCM/NoPadding</td><td>crypto-algorithm</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>36</td><td>9</td><td>init(Cipher.ENCRYPT_MODE, key, new GCMParameterSpec(128, iv))</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>36</td><td>42</td><td>init(Cipher.ENCRYPT_MODE, key, new GCMParameterSpec(128, iv))</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>37</td><td>28</td><td>doFinal(text.getBytes(StandardCharsets.UTF_8))</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>37</td><td>28</td><td>doFinal(text.getBytes(StandardCharsets.UTF_8))</td><td>crypto, crypto-generate</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>40</td><td>28</td><td>doFinal(encrypted)</td><td>crypto, crypto-generate</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>40</td><td>43</td><td>doFinal(encrypted)</td><td>crypto, crypto-generate</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>64</td><td>34</td><td>getInstance(&quot;HmacSHA256&quot;)</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>64</td><td>59</td><td>HmacSHA256</td><td>crypto-algorithm</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>65</td><td>25</td><td>generateKey()</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>67</td><td>19</td><td>getInstance(&quot;HmacSHA256&quot;)</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>67</td><td>35</td><td>HmacSHA256</td><td>crypto-algorithm</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>68</td><td>9</td><td>init(key)</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>68</td><td>18</td><td>init(key)</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>71</td><td>13</td><td>doFinal(text.getBytes(StandardCharsets.UTF_8))</td><td>crypto</td></tr><tr><td>src/main/java/com/opstree/microservice/salary/crypto/CryptoUtils.java</td><td>71</td><td>13</td><td>doFinal(text.getBytes(StandardCharsets.UTF_8))</td><td>crypto, crypto-generate</td></tr></tbody>
+</table>
+</section>
+
+<section><h2>Recorded Crypto Asset Details</h2><details><summary>aes</summary><h3>bom-ref</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">&quot;crypto/algorithm/aes@2.16.840.1.101.3.4.1&quot;</pre><h3>description</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">&quot;NIST Algorithm&quot;</pre><h3>cryptoProperties</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">{
+  &quot;assetType&quot;: &quot;algorithm&quot;,
+  &quot;oid&quot;: &quot;2.16.840.1.101.3.4.1&quot;
+}</pre><h3>properties</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">Not recorded</pre><h3>evidence</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">Not recorded</pre></details><details><summary>hmacSHA</summary><h3>bom-ref</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">&quot;crypto/algorithm/hmacSHA@1.3.6.1.5.5.8.1.2&quot;</pre><h3>description</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">&quot;ISAKMP HMAC algorithm&quot;</pre><h3>cryptoProperties</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">{
+  &quot;assetType&quot;: &quot;algorithm&quot;,
+  &quot;oid&quot;: &quot;1.3.6.1.5.5.8.1.2&quot;
+}</pre><h3>properties</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">Not recorded</pre><h3>evidence</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">Not recorded</pre></details><details><summary>sha-256</summary><h3>bom-ref</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">&quot;crypto/algorithm/sha-256@2.16.840.1.101.3.4.2.1&quot;</pre><h3>description</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">&quot;NIST Algorithm&quot;</pre><h3>cryptoProperties</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">{
+  &quot;assetType&quot;: &quot;algorithm&quot;,
+  &quot;oid&quot;: &quot;2.16.840.1.101.3.4.2.1&quot;
+}</pre><h3>properties</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">Not recorded</pre><h3>evidence</h3><pre style="white-space:pre-wrap;overflow-wrap:anywhere">Not recorded</pre></details></section>
+<section><h2>BOM Annotations</h2><p class="meta">Includes document descriptions and any audit annotations recorded in this BOM. An annotation is not necessarily an audit finding. No findings does not establish security.</p><pre style="white-space:pre-wrap;overflow-wrap:anywhere">{
+  &quot;bom-ref&quot;: &quot;metadata-annotations&quot;,
+  &quot;subjects&quot;: [
+    &quot;pkg:maven/com.opstree.microservice/salary@0.1.0-RELEASE?type=jar&quot;
+  ],
+  &quot;annotator&quot;: {
+    &quot;component&quot;: {
+      &quot;group&quot;: &quot;@cdxgen&quot;,
+      &quot;name&quot;: &quot;cdxgen&quot;,
+      &quot;version&quot;: &quot;13.5.0&quot;,
+      &quot;purl&quot;: &quot;pkg:npm/%40cdxgen/cdxgen@13.5.0&quot;,
+      &quot;type&quot;: &quot;application&quot;,
+      &quot;bom-ref&quot;: &quot;pkg:npm/@cdxgen/cdxgen@13.5.0&quot;,
+      &quot;publisher&quot;: &quot;OWASP Foundation&quot;,
+      &quot;authors&quot;: [
+        {
+          &quot;name&quot;: &quot;OWASP Foundation&quot;
+        }
+      ]
+    }
+  },
+  &quot;timestamp&quot;: &quot;2026-10-26T06:50:42Z&quot;,
+  &quot;text&quot;: &quot;This Cryptography Bill-of-Materials (CBOM) document was created on Monday, October 26, 2026 with cdxgen. The data was captured during the build lifecycle phase. The document describes an application named &#x27;salary&#x27; with the release version &#x27;0.1.0-RELEASE&#x27;. There are 3 cryptographic assets listed under components in this CBOM. There are 130 components. The package type in this CBOM is maven with 53 purl namespaces described under components. The components were identified from the source files: pom.xml. Further, there is a formulation section with components, workflows and steps for reproducibility.&quot;
+}</pre></section>
+
+<section>
+<h2>Dependency and Component Inventory (127)</h2>
+<table>
+<thead><tr>
+<th>Component</th><th>Version</th><th>Type</th><th>Group</th>
+</tr></thead>
+<tbody>
+        <tr>
+            <td>spring-boot-starter-actuator</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-boot-starter</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-boot</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-boot-autoconfigure</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-boot-starter-logging</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>logback-classic</td>
+            <td>1.4.8</td>
+            <td>library</td>
+            <td>ch.qos.logback</td>
+        </tr>
+        <tr>
+            <td>logback-core</td>
+            <td>1.4.8</td>
+            <td>library</td>
+            <td>ch.qos.logback</td>
+        </tr>
+        <tr>
+            <td>log4j-to-slf4j</td>
+            <td>2.20.0</td>
+            <td>framework</td>
+            <td>org.apache.logging.log4j</td>
+        </tr>
+        <tr>
+            <td>log4j-api</td>
+            <td>2.20.0</td>
+            <td>framework</td>
+            <td>org.apache.logging.log4j</td>
+        </tr>
+        <tr>
+            <td>jul-to-slf4j</td>
+            <td>2.0.7</td>
+            <td>framework</td>
+            <td>org.slf4j</td>
+        </tr>
+        <tr>
+            <td>jakarta.annotation-api</td>
+            <td>2.1.1</td>
+            <td>library</td>
+            <td>jakarta.annotation</td>
+        </tr>
+        <tr>
+            <td>snakeyaml</td>
+            <td>1.33</td>
+            <td>library</td>
+            <td>org.yaml</td>
+        </tr>
+        <tr>
+            <td>spring-boot-actuator-autoconfigure</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-boot-actuator</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>jackson-datatype-jsr310</td>
+            <td>2.15.2</td>
+            <td>library</td>
+            <td>com.fasterxml.jackson.datatype</td>
+        </tr>
+        <tr>
+            <td>micrometer-observation</td>
+            <td>1.11.1</td>
+            <td>library</td>
+            <td>io.micrometer</td>
+        </tr>
+        <tr>
+            <td>micrometer-commons</td>
+            <td>1.11.1</td>
+            <td>library</td>
+            <td>io.micrometer</td>
+        </tr>
+        <tr>
+            <td>micrometer-core</td>
+            <td>1.11.1</td>
+            <td>library</td>
+            <td>io.micrometer</td>
+        </tr>
+        <tr>
+            <td>HdrHistogram</td>
+            <td>2.1.12</td>
+            <td>library</td>
+            <td>org.hdrhistogram</td>
+        </tr>
+        <tr>
+            <td>LatencyUtils</td>
+            <td>2.0.3</td>
+            <td>library</td>
+            <td>org.latencyutils</td>
+        </tr>
+        <tr>
+            <td>lombok</td>
+            <td>1.18.28</td>
+            <td>library</td>
+            <td>org.projectlombok</td>
+        </tr>
+        <tr>
+            <td>logstash-logback-encoder</td>
+            <td>6.6</td>
+            <td>library</td>
+            <td>net.logstash.logback</td>
+        </tr>
+        <tr>
+            <td>jackson-databind</td>
+            <td>2.15.2</td>
+            <td>library</td>
+            <td>com.fasterxml.jackson.core</td>
+        </tr>
+        <tr>
+            <td>jackson-annotations</td>
+            <td>2.15.2</td>
+            <td>library</td>
+            <td>com.fasterxml.jackson.core</td>
+        </tr>
+        <tr>
+            <td>jackson-core</td>
+            <td>2.15.2</td>
+            <td>library</td>
+            <td>com.fasterxml.jackson.core</td>
+        </tr>
+        <tr>
+            <td>springdoc-openapi-starter-webmvc-ui</td>
+            <td>2.0.3</td>
+            <td>library</td>
+            <td>org.springdoc</td>
+        </tr>
+        <tr>
+            <td>springdoc-openapi-starter-webmvc-api</td>
+            <td>2.0.3</td>
+            <td>library</td>
+            <td>org.springdoc</td>
+        </tr>
+        <tr>
+            <td>springdoc-openapi-starter-common</td>
+            <td>2.0.3</td>
+            <td>library</td>
+            <td>org.springdoc</td>
+        </tr>
+        <tr>
+            <td>swagger-core-jakarta</td>
+            <td>2.2.8</td>
+            <td>library</td>
+            <td>io.swagger.core.v3</td>
+        </tr>
+        <tr>
+            <td>commons-lang3</td>
+            <td>3.12.0</td>
+            <td>framework</td>
+            <td>org.apache.commons</td>
+        </tr>
+        <tr>
+            <td>swagger-annotations-jakarta</td>
+            <td>2.2.8</td>
+            <td>library</td>
+            <td>io.swagger.core.v3</td>
+        </tr>
+        <tr>
+            <td>swagger-models-jakarta</td>
+            <td>2.2.8</td>
+            <td>library</td>
+            <td>io.swagger.core.v3</td>
+        </tr>
+        <tr>
+            <td>jakarta.validation-api</td>
+            <td>3.0.2</td>
+            <td>library</td>
+            <td>jakarta.validation</td>
+        </tr>
+        <tr>
+            <td>jackson-dataformat-yaml</td>
+            <td>2.15.2</td>
+            <td>library</td>
+            <td>com.fasterxml.jackson.dataformat</td>
+        </tr>
+        <tr>
+            <td>swagger-ui</td>
+            <td>4.17.1</td>
+            <td>library</td>
+            <td>org.webjars</td>
+        </tr>
+        <tr>
+            <td>webjars-locator-core</td>
+            <td>0.52</td>
+            <td>library</td>
+            <td>org.webjars</td>
+        </tr>
+        <tr>
+            <td>slf4j-api</td>
+            <td>2.0.7</td>
+            <td>framework</td>
+            <td>org.slf4j</td>
+        </tr>
+        <tr>
+            <td>classgraph</td>
+            <td>4.8.149</td>
+            <td>library</td>
+            <td>io.github.classgraph</td>
+        </tr>
+        <tr>
+            <td>spring-boot-starter-web</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-boot-starter-json</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>jackson-datatype-jdk8</td>
+            <td>2.15.2</td>
+            <td>library</td>
+            <td>com.fasterxml.jackson.datatype</td>
+        </tr>
+        <tr>
+            <td>jackson-module-parameter-names</td>
+            <td>2.15.2</td>
+            <td>library</td>
+            <td>com.fasterxml.jackson.module</td>
+        </tr>
+        <tr>
+            <td>spring-boot-starter-tomcat</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>tomcat-embed-core</td>
+            <td>10.1.10</td>
+            <td>framework</td>
+            <td>org.apache.tomcat.embed</td>
+        </tr>
+        <tr>
+            <td>tomcat-embed-el</td>
+            <td>10.1.10</td>
+            <td>framework</td>
+            <td>org.apache.tomcat.embed</td>
+        </tr>
+        <tr>
+            <td>tomcat-embed-websocket</td>
+            <td>10.1.10</td>
+            <td>framework</td>
+            <td>org.apache.tomcat.embed</td>
+        </tr>
+        <tr>
+            <td>spring-web</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-beans</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-webmvc</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-aop</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-context</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-expression</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-boot-starter-data-cassandra</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-tx</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-data-cassandra</td>
+            <td>4.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.data</td>
+        </tr>
+        <tr>
+            <td>spring-data-commons</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.data</td>
+        </tr>
+        <tr>
+            <td>java-driver-core</td>
+            <td>4.15.0</td>
+            <td>library</td>
+            <td>com.datastax.oss</td>
+        </tr>
+        <tr>
+            <td>native-protocol</td>
+            <td>1.5.1</td>
+            <td>library</td>
+            <td>com.datastax.oss</td>
+        </tr>
+        <tr>
+            <td>java-driver-shaded-guava</td>
+            <td>25.1-jre-graal-sub-1</td>
+            <td>library</td>
+            <td>com.datastax.oss</td>
+        </tr>
+        <tr>
+            <td>config</td>
+            <td>1.4.1</td>
+            <td>library</td>
+            <td>com.typesafe</td>
+        </tr>
+        <tr>
+            <td>jnr-posix</td>
+            <td>3.1.15</td>
+            <td>library</td>
+            <td>com.github.jnr</td>
+        </tr>
+        <tr>
+            <td>jnr-ffi</td>
+            <td>2.2.11</td>
+            <td>library</td>
+            <td>com.github.jnr</td>
+        </tr>
+        <tr>
+            <td>jffi</td>
+            <td>1.3.9</td>
+            <td>library</td>
+            <td>com.github.jnr</td>
+        </tr>
+        <tr>
+            <td>jffi</td>
+            <td>1.3.9</td>
+            <td>library</td>
+            <td>com.github.jnr</td>
+        </tr>
+        <tr>
+            <td>asm-commons</td>
+            <td>9.2</td>
+            <td>framework</td>
+            <td>org.ow2.asm</td>
+        </tr>
+        <tr>
+            <td>asm-analysis</td>
+            <td>9.2</td>
+            <td>framework</td>
+            <td>org.ow2.asm</td>
+        </tr>
+        <tr>
+            <td>asm-tree</td>
+            <td>9.2</td>
+            <td>framework</td>
+            <td>org.ow2.asm</td>
+        </tr>
+        <tr>
+            <td>asm-util</td>
+            <td>9.2</td>
+            <td>framework</td>
+            <td>org.ow2.asm</td>
+        </tr>
+        <tr>
+            <td>jnr-a64asm</td>
+            <td>1.0.0</td>
+            <td>library</td>
+            <td>com.github.jnr</td>
+        </tr>
+        <tr>
+            <td>jnr-x86asm</td>
+            <td>1.0.2</td>
+            <td>library</td>
+            <td>com.github.jnr</td>
+        </tr>
+        <tr>
+            <td>jnr-constants</td>
+            <td>0.10.3</td>
+            <td>library</td>
+            <td>com.github.jnr</td>
+        </tr>
+        <tr>
+            <td>metrics-core</td>
+            <td>4.2.19</td>
+            <td>framework</td>
+            <td>io.dropwizard.metrics</td>
+        </tr>
+        <tr>
+            <td>reactive-streams</td>
+            <td>1.0.4</td>
+            <td>library</td>
+            <td>org.reactivestreams</td>
+        </tr>
+        <tr>
+            <td>jcip-annotations</td>
+            <td>1.0-1</td>
+            <td>library</td>
+            <td>com.github.stephenc.jcip</td>
+        </tr>
+        <tr>
+            <td>spotbugs-annotations</td>
+            <td>3.1.12</td>
+            <td>library</td>
+            <td>com.github.spotbugs</td>
+        </tr>
+        <tr>
+            <td>jsr305</td>
+            <td>3.0.2</td>
+            <td>library</td>
+            <td>com.google.code.findbugs</td>
+        </tr>
+        <tr>
+            <td>java-driver-query-builder</td>
+            <td>4.15.0</td>
+            <td>library</td>
+            <td>com.datastax.oss</td>
+        </tr>
+        <tr>
+            <td>spring-boot-starter-data-redis</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-data-redis</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.data</td>
+        </tr>
+        <tr>
+            <td>spring-data-keyvalue</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.data</td>
+        </tr>
+        <tr>
+            <td>spring-oxm</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-context-support</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>lettuce-core</td>
+            <td>6.2.4.RELEASE</td>
+            <td>library</td>
+            <td>io.lettuce</td>
+        </tr>
+        <tr>
+            <td>netty-common</td>
+            <td>4.1.94.Final</td>
+            <td>framework</td>
+            <td>io.netty</td>
+        </tr>
+        <tr>
+            <td>netty-handler</td>
+            <td>4.1.94.Final</td>
+            <td>framework</td>
+            <td>io.netty</td>
+        </tr>
+        <tr>
+            <td>netty-resolver</td>
+            <td>4.1.94.Final</td>
+            <td>framework</td>
+            <td>io.netty</td>
+        </tr>
+        <tr>
+            <td>netty-buffer</td>
+            <td>4.1.94.Final</td>
+            <td>framework</td>
+            <td>io.netty</td>
+        </tr>
+        <tr>
+            <td>netty-transport-native-unix-common</td>
+            <td>4.1.94.Final</td>
+            <td>framework</td>
+            <td>io.netty</td>
+        </tr>
+        <tr>
+            <td>netty-codec</td>
+            <td>4.1.94.Final</td>
+            <td>framework</td>
+            <td>io.netty</td>
+        </tr>
+        <tr>
+            <td>netty-transport</td>
+            <td>4.1.94.Final</td>
+            <td>framework</td>
+            <td>io.netty</td>
+        </tr>
+        <tr>
+            <td>reactor-core</td>
+            <td>3.5.7</td>
+            <td>library</td>
+            <td>io.projectreactor</td>
+        </tr>
+        <tr>
+            <td>micrometer-registry-prometheus</td>
+            <td>1.11.1</td>
+            <td>library</td>
+            <td>io.micrometer</td>
+        </tr>
+        <tr>
+            <td>simpleclient_common</td>
+            <td>0.16.0</td>
+            <td>library</td>
+            <td>io.prometheus</td>
+        </tr>
+        <tr>
+            <td>simpleclient</td>
+            <td>0.16.0</td>
+            <td>library</td>
+            <td>io.prometheus</td>
+        </tr>
+        <tr>
+            <td>simpleclient_tracer_otel</td>
+            <td>0.16.0</td>
+            <td>library</td>
+            <td>io.prometheus</td>
+        </tr>
+        <tr>
+            <td>simpleclient_tracer_common</td>
+            <td>0.16.0</td>
+            <td>library</td>
+            <td>io.prometheus</td>
+        </tr>
+        <tr>
+            <td>simpleclient_tracer_otel_agent</td>
+            <td>0.16.0</td>
+            <td>library</td>
+            <td>io.prometheus</td>
+        </tr>
+        <tr>
+            <td>spring-boot-starter-test</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-boot-test</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>spring-boot-test-autoconfigure</td>
+            <td>3.1.1</td>
+            <td>framework</td>
+            <td>org.springframework.boot</td>
+        </tr>
+        <tr>
+            <td>json-path</td>
+            <td>2.8.0</td>
+            <td>library</td>
+            <td>com.jayway.jsonpath</td>
+        </tr>
+        <tr>
+            <td>jakarta.xml.bind-api</td>
+            <td>4.0.0</td>
+            <td>library</td>
+            <td>jakarta.xml.bind</td>
+        </tr>
+        <tr>
+            <td>jakarta.activation-api</td>
+            <td>2.1.2</td>
+            <td>library</td>
+            <td>jakarta.activation</td>
+        </tr>
+        <tr>
+            <td>json-smart</td>
+            <td>2.4.11</td>
+            <td>library</td>
+            <td>net.minidev</td>
+        </tr>
+        <tr>
+            <td>accessors-smart</td>
+            <td>2.4.11</td>
+            <td>library</td>
+            <td>net.minidev</td>
+        </tr>
+        <tr>
+            <td>asm</td>
+            <td>9.3</td>
+            <td>framework</td>
+            <td>org.ow2.asm</td>
+        </tr>
+        <tr>
+            <td>assertj-core</td>
+            <td>3.24.2</td>
+            <td>library</td>
+            <td>org.assertj</td>
+        </tr>
+        <tr>
+            <td>byte-buddy</td>
+            <td>1.14.5</td>
+            <td>library</td>
+            <td>net.bytebuddy</td>
+        </tr>
+        <tr>
+            <td>hamcrest</td>
+            <td>2.2</td>
+            <td>framework</td>
+            <td>org.hamcrest</td>
+        </tr>
+        <tr>
+            <td>junit-jupiter</td>
+            <td>5.9.3</td>
+            <td>library</td>
+            <td>org.junit.jupiter</td>
+        </tr>
+        <tr>
+            <td>junit-jupiter-api</td>
+            <td>5.9.3</td>
+            <td>library</td>
+            <td>org.junit.jupiter</td>
+        </tr>
+        <tr>
+            <td>opentest4j</td>
+            <td>1.2.0</td>
+            <td>library</td>
+            <td>org.opentest4j</td>
+        </tr>
+        <tr>
+            <td>junit-platform-commons</td>
+            <td>1.9.3</td>
+            <td>library</td>
+            <td>org.junit.platform</td>
+        </tr>
+        <tr>
+            <td>apiguardian-api</td>
+            <td>1.1.2</td>
+            <td>library</td>
+            <td>org.apiguardian</td>
+        </tr>
+        <tr>
+            <td>junit-jupiter-params</td>
+            <td>5.9.3</td>
+            <td>library</td>
+            <td>org.junit.jupiter</td>
+        </tr>
+        <tr>
+            <td>junit-jupiter-engine</td>
+            <td>5.9.3</td>
+            <td>library</td>
+            <td>org.junit.jupiter</td>
+        </tr>
+        <tr>
+            <td>junit-platform-engine</td>
+            <td>1.9.3</td>
+            <td>library</td>
+            <td>org.junit.platform</td>
+        </tr>
+        <tr>
+            <td>mockito-core</td>
+            <td>5.3.1</td>
+            <td>library</td>
+            <td>org.mockito</td>
+        </tr>
+        <tr>
+            <td>byte-buddy-agent</td>
+            <td>1.14.5</td>
+            <td>library</td>
+            <td>net.bytebuddy</td>
+        </tr>
+        <tr>
+            <td>objenesis</td>
+            <td>3.3</td>
+            <td>library</td>
+            <td>org.objenesis</td>
+        </tr>
+        <tr>
+            <td>mockito-junit-jupiter</td>
+            <td>5.3.1</td>
+            <td>library</td>
+            <td>org.mockito</td>
+        </tr>
+        <tr>
+            <td>jsonassert</td>
+            <td>1.5.1</td>
+            <td>library</td>
+            <td>org.skyscreamer</td>
+        </tr>
+        <tr>
+            <td>android-json</td>
+            <td>0.0.20131108.vaadin1</td>
+            <td>framework</td>
+            <td>com.vaadin.external.google</td>
+        </tr>
+        <tr>
+            <td>spring-core</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-jcl</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>spring-test</td>
+            <td>6.0.10</td>
+            <td>framework</td>
+            <td>org.springframework</td>
+        </tr>
+        <tr>
+            <td>xmlunit-core</td>
+            <td>2.9.1</td>
+            <td>library</td>
+            <td>org.xmlunit</td>
+        </tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>Important Limitations</h2>
+<div class="note">
+This report displays information from the supplied CycloneDX JSON and, when available, the separate source-location JSON. Missing fields are not inferred. Source locations apply to the source revision that was scanned.
+A missing cryptographic asset does not prove that the application does not use
+cryptography. Detection depends on scanner coverage and successful analysis.
+This report does not perform vulnerability analysis or provide remediation recommendations.
+</div>
+</section>
+</main>
+<footer>Generated from CycloneDX JSON | CBOM Proof of Concept</footer>
+</body>
+</html>
