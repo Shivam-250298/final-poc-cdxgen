@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NODEJS-TEST | Quantum Cryptography Assessment</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #f3f6fb;
+    color: #172338;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: #14243c;
+    color: white;
+    padding: 34px 7%;
+}
+
+header h1 {
+    margin: 0 0 8px;
+    font-size: 29px;
+}
+
+header p {
+    margin: 0;
+    color: #c3d1e4;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 22px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e1e7f0;
+    border-radius: 12px;
+    padding: 23px;
+}
+
+.card .value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #193e73;
+}
+
+.card .label {
+    margin-top: 8px;
+    color: #637187;
+    font-size: 13px;
+}
+
+section {
+    background: white;
+    border: 1px solid #e1e7f0;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    padding: 24px;
+    overflow-x: auto;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 0 0 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+th {
+    background: #edf2f9;
+    color: #344761;
+    text-align: left;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e7ecf3;
+    overflow-wrap: anywhere;
+    vertical-align: top;
+}
+
+tr:hover td {
+    background: #f8faff;
+}
+
+.meta {
+    font-size: 13px;
+    color: #56657a;
+    line-height: 1.9;
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.high {
+    background: #fde8e8;
+    color: #a61b1b;
+}
+
+.medium {
+    background: #fff2d8;
+    color: #986000;
+}
+
+.low {
+    background: #e2f5e9;
+    color: #176b39;
+}
+
+.unknown {
+    background: #edf0f5;
+    color: #536176;
+}
+
+details {
+    border-bottom: 1px solid #e7ecf3;
+    padding: 14px 0;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #193e73;
+}
+
+details .meta {
+    padding: 14px 0 0 12px;
+}
+
+.note {
+    background: #f0f5fc;
+    border-left: 4px solid #3769a5;
+    padding: 15px;
+    line-height: 1.6;
+    font-size: 13px;
+}
+
+.empty {
+    text-align: center;
+    color: #748095;
+    padding: 28px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #748095;
+    font-size: 12px;
+}
+
+@media print {
+    body { background: white; }
+    section, .card { break-inside: avoid; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>NODEJS-TEST — Quantum Cryptography Assessment</h1>
+    <p>QBOM-style Risk Assessment | Cryptographic Inventory Analysis</p>
+</header>
+
+<main>
+
+<div class="cards">
+    <div class="card">
+        <div class="value">1</div>
+        <div class="label">Total Cryptographic Assets</div>
+    </div>
+
+    <div class="card">
+        <div class="value">0</div>
+        <div class="label">High Quantum Risk</div>
+    </div>
+
+    <div class="card">
+        <div class="value">1</div>
+        <div class="label">High Classical Risk</div>
+    </div>
+
+    <div class="card">
+        <div class="value">0</div>
+        <div class="label">Unknown Quantum Risk</div>
+    </div>
+</div>
+
+<section>
+<h2>Report Information</h2>
+<div class="meta">
+<strong>Project:</strong> NODEJS-TEST<br>
+<strong>Report Type:</strong> Custom QBOM-style Quantum Risk Assessment<br>
+<strong>Source CBOM:</strong> reports/qbom/nodejs-test-cbom.json<br>
+<strong>Assessment Generator:</strong> Custom Python POC using cdxgen CBOM<br>
+<strong>HTML Generated:</strong> 28 Oct 2026, 18:32 UTC
+</div>
+</section>
+
+<section>
+<h2>Quantum Risk Assessment (1 Assets)</h2>
+<table>
+<thead>
+<tr>
+<th>Algorithm / Asset</th>
+<th>Asset Type</th>
+<th>Primitive</th>
+<th>Quantum Risk</th>
+<th>Classical Risk</th>
+<th>Quantum Readiness</th>
+</tr>
+</thead>
+<tbody>
+        <tr>
+            <td><strong>md5</strong></td>
+            <td>algorithm</td>
+            <td>hash</td>
+            <td><span class="badge medium">Not separately assessed</span></td>
+            <td><span class="badge high">High</span></td>
+            <td>Classical</td>
+        </tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>High-Risk Findings</h2>
+<p class="meta">
+Assets classified as High in either quantum or classical risk.
+These are preliminary algorithm-level classifications, not confirmed vulnerabilities.
+</p>
+<table>
+<thead>
+<tr>
+<th>Algorithm / Asset</th>
+<th>Quantum Risk</th>
+<th>Classical Risk</th>
+<th>Recommended Action</th>
+</tr>
+</thead>
+<tbody>
+            <tr>
+                <td><strong>md5</strong></td>
+                <td><span class="badge medium">Not separately assessed</span></td>
+                <td><span class="badge high">High</span></td>
+                <td>Replace MD5 for security-sensitive cryptographic uses.</td>
+            </tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>Recommendations</h2>
+<table>
+<thead>
+<tr>
+<th>Algorithm / Asset</th>
+<th>Recommendation</th>
+</tr>
+</thead>
+<tbody>
+        <tr>
+            <td><strong>md5</strong></td>
+            <td>Replace MD5 for security-sensitive cryptographic uses.</td>
+        </tr></tbody>
+</table>
+</section>
+
+<section>
+<h2>Detailed Cryptographic Asset Assessment</h2>
+
+        <details>
+            <summary>md5</summary>
+            <div class="meta">
+                <strong>Asset Type:</strong> algorithm<br>
+                <strong>Primitive:</strong> hash<br>
+                <strong>Algorithm Family:</strong> MD5<br>
+                <strong>Key Size:</strong> Unknown<br>
+                <strong>Quantum Risk:</strong> Not separately assessed<br>
+                <strong>Classical Risk:</strong> High<br>
+                <strong>Quantum Readiness:</strong> Classical<br>
+                <strong>Usage Verified:</strong> False<br>
+                <strong>Assessment Basis:</strong> Algorithm inventory only<br>
+                <strong>Recommendation:</strong> Replace MD5 for security-sensitive cryptographic uses.
+            </div>
+        </details>
+</section>
+
+<section>
+<h2>Assessment Limitations</h2>
+<div class="note">
+This is a custom QBOM-style assessment generated from an existing
+cryptographic inventory. It is not an official cdxgen QBOM output.
+Risk classifications are based on recorded algorithm names and
+available metadata.
+
+<br><br>
+
+Actual cryptographic usage, key sizes, implementation details,
+protocol configurations, and runtime exposure have not been verified.
+An identified algorithm does not necessarily indicate an exploitable
+vulnerability.
+
+<br><br>
+
+Unknown or missing information requires further investigation.
+This report should be used to prioritize verification and
+post-quantum cryptography migration planning, not as proof of
+application security or insecurity.
+</div>
+</section>
+
+</main>
+
+<footer>
+Generated from QBOM-style JSON | Custom Quantum Cryptography Assessment
+</footer>
+
+</body>
+</html>

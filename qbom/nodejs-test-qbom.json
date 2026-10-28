@@ -1,0 +1,29 @@
+{
+  "report_type": "Custom QBOM-style Quantum Risk Assessment",
+  "generator": "Custom Python POC using cdxgen CBOM",
+  "generated_at": "2026-10-28T18:31:17.949825+00:00",
+  "source_cbom": "reports/qbom/nodejs-test-cbom.json",
+  "note": "This is not an official cdxgen QBOM. Risk classifications are preliminary and do not confirm actual cryptographic usage or exploitable vulnerabilities.",
+  "summary": {
+    "total_crypto_assets": 1,
+    "high_quantum_risk": 0,
+    "high_classical_risk": 1,
+    "unknown_quantum_risk": 0
+  },
+  "assets": [
+    {
+      "name": "md5",
+      "bom_ref": "crypto/algorithm/md5@1.2.840.113549.2.5",
+      "asset_type": "algorithm",
+      "primitive": "hash",
+      "algorithm_family": "MD5",
+      "key_size": "Unknown",
+      "quantum_risk": "Not separately assessed",
+      "classical_risk": "High",
+      "quantum_readiness": "Classical",
+      "recommendation": "Replace MD5 for security-sensitive cryptographic uses.",
+      "assessment_basis": "Algorithm inventory only",
+      "usage_verified": false
+    }
+  ]
+}
